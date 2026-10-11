@@ -1,0 +1,946 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      The system is: Linux - 6.18.15-400.asahi.fc43.aarch64+16k - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/3.31.11/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-6qiCKh"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-6qiCKh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-6qiCKh'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_f6049
+        [1/2] /usr/bin/c++   -v -o CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        Target: aarch64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,m2,cobol,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugzilla.redhat.com/ --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-15.3.1-build/gcc-15.3.1-20260722/obj-aarch64-redhat-linux/isl-install --enable-gnu-indirect-function --build=aarch64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1 --disable-libssp --disable-libquadmath
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.3.1 20260722 (Red Hat 15.3.1-1) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f6049.dir/'
+         /usr/libexec/gcc/aarch64-redhat-linux/15/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f6049.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -o /tmp/ccbBHx8a.s
+        GNU C++17 (GCC) version 15.3.1 20260722 (Red Hat 15.3.1-1) (aarch64-redhat-linux)
+        	compiled by GNU C version 15.3.1 20260722 (Red Hat 15.3.1-1), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-redhat-linux/15/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-redhat-linux/15/../../../../aarch64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/aarch64-redhat-linux/15/../../../../include/c++/15
+         /usr/lib/gcc/aarch64-redhat-linux/15/../../../../include/c++/15/aarch64-redhat-linux
+         /usr/lib/gcc/aarch64-redhat-linux/15/../../../../include/c++/15/backward
+         /usr/lib/gcc/aarch64-redhat-linux/15/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 648aa360d6988db180e9d3152acfe4db
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f6049.dir/'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccbBHx8a.s
+        GNU assembler version 2.45.1 (aarch64-redhat-linux) using BFD version version 2.45.1-5.fc43
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-redhat-linux/15/:/usr/libexec/gcc/aarch64-redhat-linux/15/:/usr/libexec/gcc/aarch64-redhat-linux/:/usr/lib/gcc/aarch64-redhat-linux/15/:/usr/lib/gcc/aarch64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-redhat-linux/15/:/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-redhat-linux/15/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f6049   && :
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-redhat-linux/15/lto-wrapper
+        Target: aarch64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,m2,cobol,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugzilla.redhat.com/ --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-15.3.1-build/gcc-15.3.1-20260722/obj-aarch64-redhat-linux/isl-install --enable-gnu-indirect-function --build=aarch64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1 --disable-libssp --disable-libquadmath
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.3.1 20260722 (Red Hat 15.3.1-1) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-redhat-linux/15/:/usr/libexec/gcc/aarch64-redhat-linux/15/:/usr/libexec/gcc/aarch64-redhat-linux/:/usr/lib/gcc/aarch64-redhat-linux/15/:/usr/lib/gcc/aarch64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-redhat-linux/15/:/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-redhat-linux/15/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f6049' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_f6049.'
+         /usr/libexec/gcc/aarch64-redhat-linux/15/collect2 -plugin /usr/libexec/gcc/aarch64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccohLnBB.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_f6049 /usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/aarch64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/aarch64-redhat-linux/15 -L/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/aarch64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-redhat-linux/15/crtend.o /usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crtn.o
+        collect2 version 15.3.1 20260722 (Red Hat 15.3.1-1)
+        /usr/bin/ld -plugin /usr/libexec/gcc/aarch64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccohLnBB.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_f6049 /usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/aarch64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/aarch64-redhat-linux/15 -L/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/aarch64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-redhat-linux/15/crtend.o /usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crtn.o
+        GNU ld version 2.45.1-5.fc43
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f6049' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_f6049.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/aarch64-redhat-linux/15/../../../../include/c++/15]
+          add: [/usr/lib/gcc/aarch64-redhat-linux/15/../../../../include/c++/15/aarch64-redhat-linux]
+          add: [/usr/lib/gcc/aarch64-redhat-linux/15/../../../../include/c++/15/backward]
+          add: [/usr/lib/gcc/aarch64-redhat-linux/15/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/aarch64-redhat-linux/15/../../../../include/c++/15] ==> [/usr/include/c++/15]
+        collapse include dir [/usr/lib/gcc/aarch64-redhat-linux/15/../../../../include/c++/15/aarch64-redhat-linux] ==> [/usr/include/c++/15/aarch64-redhat-linux]
+        collapse include dir [/usr/lib/gcc/aarch64-redhat-linux/15/../../../../include/c++/15/backward] ==> [/usr/include/c++/15/backward]
+        collapse include dir [/usr/lib/gcc/aarch64-redhat-linux/15/include] ==> [/usr/lib/gcc/aarch64-redhat-linux/15/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/15;/usr/include/c++/15/aarch64-redhat-linux;/usr/include/c++/15/backward;/usr/lib/gcc/aarch64-redhat-linux/15/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-6qiCKh']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja-build -v cmTC_f6049]
+        ignore line: [[1/2] /usr/bin/c++   -v -o CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [Target: aarch64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d m2 cobol lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugzilla.redhat.com/ --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-15.3.1-build/gcc-15.3.1-20260722/obj-aarch64-redhat-linux/isl-install --enable-gnu-indirect-function --build=aarch64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1 --disable-libssp --disable-libquadmath]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.3.1 20260722 (Red Hat 15.3.1-1) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f6049.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-redhat-linux/15/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f6049.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -o /tmp/ccbBHx8a.s]
+        ignore line: [GNU C++17 (GCC) version 15.3.1 20260722 (Red Hat 15.3.1-1) (aarch64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 15.3.1 20260722 (Red Hat 15.3.1-1)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-redhat-linux/15/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-redhat-linux/15/../../../../aarch64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/aarch64-redhat-linux/15/../../../../include/c++/15]
+        ignore line: [ /usr/lib/gcc/aarch64-redhat-linux/15/../../../../include/c++/15/aarch64-redhat-linux]
+        ignore line: [ /usr/lib/gcc/aarch64-redhat-linux/15/../../../../include/c++/15/backward]
+        ignore line: [ /usr/lib/gcc/aarch64-redhat-linux/15/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 648aa360d6988db180e9d3152acfe4db]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f6049.dir/']
+        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccbBHx8a.s]
+        ignore line: [GNU assembler version 2.45.1 (aarch64-redhat-linux) using BFD version version 2.45.1-5.fc43]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-redhat-linux/15/:/usr/libexec/gcc/aarch64-redhat-linux/15/:/usr/libexec/gcc/aarch64-redhat-linux/:/usr/lib/gcc/aarch64-redhat-linux/15/:/usr/lib/gcc/aarch64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-redhat-linux/15/:/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-redhat-linux/15/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /usr/bin/c++  -v -Wl -v CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f6049   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-redhat-linux/15/lto-wrapper]
+        ignore line: [Target: aarch64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d m2 cobol lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugzilla.redhat.com/ --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-15.3.1-build/gcc-15.3.1-20260722/obj-aarch64-redhat-linux/isl-install --enable-gnu-indirect-function --build=aarch64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1 --disable-libssp --disable-libquadmath]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.3.1 20260722 (Red Hat 15.3.1-1) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-redhat-linux/15/:/usr/libexec/gcc/aarch64-redhat-linux/15/:/usr/libexec/gcc/aarch64-redhat-linux/:/usr/lib/gcc/aarch64-redhat-linux/15/:/usr/lib/gcc/aarch64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-redhat-linux/15/:/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-redhat-linux/15/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f6049' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_f6049.']
+        link line: [ /usr/libexec/gcc/aarch64-redhat-linux/15/collect2 -plugin /usr/libexec/gcc/aarch64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccohLnBB.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_f6049 /usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/aarch64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/aarch64-redhat-linux/15 -L/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/aarch64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-redhat-linux/15/crtend.o /usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/aarch64-redhat-linux/15/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/aarch64-redhat-linux/15/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/aarch64-redhat-linux/15/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccohLnBB.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_f6049] ==> ignore
+          arg [/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/aarch64-redhat-linux/15/crtbegin.o] ==> obj [/usr/lib/gcc/aarch64-redhat-linux/15/crtbegin.o]
+          arg [-L/usr/lib/gcc/aarch64-redhat-linux/15] ==> dir [/usr/lib/gcc/aarch64-redhat-linux/15]
+          arg [-L/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64] ==> dir [/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/aarch64-redhat-linux/15/../../..] ==> dir [/usr/lib/gcc/aarch64-redhat-linux/15/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/aarch64-redhat-linux/15/crtend.o] ==> obj [/usr/lib/gcc/aarch64-redhat-linux/15/crtend.o]
+          arg [/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crtn.o]
+        ignore line: [collect2 version 15.3.1 20260722 (Red Hat 15.3.1-1)]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/aarch64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccohLnBB.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_f6049 /usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/aarch64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/aarch64-redhat-linux/15 -L/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/aarch64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f6049.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-redhat-linux/15/crtend.o /usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-redhat-linux/15] ==> [/usr/lib/gcc/aarch64-redhat-linux/15]
+        collapse library dir [/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/aarch64-redhat-linux/15/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/aarch64-redhat-linux/15/crtbegin.o;/usr/lib/gcc/aarch64-redhat-linux/15/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-redhat-linux/15;/usr/lib64;/lib64;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld version 2.45.1-5.fc43
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "build-support/custom-modules/ns3-compiler-and-linker-support.cmake:57 (check_cxx_source_compiles)"
+      - "build-support/macros-and-definitions.cmake:44 (include)"
+      - "CMakeLists.txt:119 (include)"
+    checks:
+      - "Performing Test GCC_WORKING_PEDANTIC_SEMICOLON"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-YjXekt"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-YjXekt"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "GCC_WORKING_PEDANTIC_SEMICOLON"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-YjXekt'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_e495f
+        [1/2] /usr/bin/c++ -DGCC_WORKING_PEDANTIC_SEMICOLON  -Wall -Wpedantic -Werror -fPIE -o CMakeFiles/cmTC_e495f.dir/src.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-YjXekt/src.cxx
+        [2/2] : && /usr/bin/c++ -Wall -Wpedantic -Werror  CMakeFiles/cmTC_e495f.dir/src.cxx.o -o cmTC_e495f   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "build-support/custom-modules/ns3-compiler-workarounds.cmake:55 (check_cxx_source_compiles)"
+      - "build-support/macros-and-definitions.cmake:399 (include)"
+      - "CMakeLists.txt:181 (process_options)"
+    checks:
+      - "Performing Test STACKTRACE_LIBRARY_ENABLED"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-eZEdd0"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-eZEdd0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "STACKTRACE_LIBRARY_ENABLED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-eZEdd0'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_ec880
+        [1/2] /usr/bin/c++ -DSTACKTRACE_LIBRARY_ENABLED  -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_ec880.dir/src.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-eZEdd0/src.cxx
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_ec880.dir/src.cxx.o -o cmTC_ec880   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "build-support/custom-modules/ns3-compiler-workarounds.cmake:84 (check_cxx_source_compiles)"
+      - "build-support/macros-and-definitions.cmake:399 (include)"
+      - "CMakeLists.txt:181 (process_options)"
+    checks:
+      - "Performing Test STACKTRACE_LIBRARY_IS_LINKED"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-fmugTb"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-fmugTb"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "STACKTRACE_LIBRARY_IS_LINKED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-fmugTb'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_7710f
+        [1/2] /usr/bin/c++ -DSTACKTRACE_LIBRARY_IS_LINKED  -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_7710f.dir/src.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-fmugTb/src.cxx
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_7710f.dir/src.cxx.o -o cmTC_7710f  -lstdc++exp && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "build-support/macros-and-definitions.cmake:663 (find_package)"
+      - "CMakeLists.txt:181 (process_options)"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-uPUcW4"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-uPUcW4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-uPUcW4'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_aada6
+        [1/2] /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_aada6.dir/src.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-uPUcW4/src.cxx
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_aada6.dir/src.cxx.o -o cmTC_aada6   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "build-support/macros-and-definitions.cmake:1114 (check_cxx_source_compiles)"
+      - "CMakeLists.txt:181 (process_options)"
+    checks:
+      - "Performing Test HAVE_UINT128_T"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-e2npWx"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-e2npWx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_UINT128_T"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-e2npWx'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_9d360
+        [1/2] /usr/bin/c++ -DHAVE_UINT128_T  -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_9d360.dir/src.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-e2npWx/src.cxx
+        FAILED: [code=1] CMakeFiles/cmTC_9d360.dir/src.cxx.o 
+        /usr/bin/c++ -DHAVE_UINT128_T  -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_9d360.dir/src.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-e2npWx/src.cxx
+        /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-e2npWx/src.cxx: In function ‘int main()’:
+        /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-e2npWx/src.cxx:4:25: error: ‘uint128_t’ was not declared in this scope; did you mean ‘uint8_t’?
+            4 |             if (sizeof (uint128_t)) return 0;
+              |                         ^~~~~~~~~
+              |                         uint8_t
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "build-support/macros-and-definitions.cmake:1123 (check_cxx_source_compiles)"
+      - "CMakeLists.txt:181 (process_options)"
+    checks:
+      - "Performing Test HAVE___UINT128_T"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Q9rJHB"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Q9rJHB"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE___UINT128_T"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Q9rJHB'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_7f98d
+        [1/2] /usr/bin/c++ -DHAVE___UINT128_T  -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_7f98d.dir/src.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Q9rJHB/src.cxx
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_7f98d.dir/src.cxx.o -o cmTC_7f98d   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFileCXX.cmake:98 (try_compile)"
+      - "build-support/macros-and-definitions.cmake:1168 (check_include_file_cxx)"
+      - "CMakeLists.txt:181 (process_options)"
+    checks:
+      - "Looking for C++ include sys/types.h"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-YwmC8C"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-YwmC8C"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-YwmC8C'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_5dea4
+        [1/2] /usr/bin/c++   -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_5dea4.dir/CheckIncludeFile.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-YwmC8C/CheckIncludeFile.cxx
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_5dea4.dir/CheckIncludeFile.cxx.o -o cmTC_5dea4   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFileCXX.cmake:98 (try_compile)"
+      - "build-support/macros-and-definitions.cmake:1169 (check_include_file_cxx)"
+      - "CMakeLists.txt:181 (process_options)"
+    checks:
+      - "Looking for C++ include sys/stat.h"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-3Phkak"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-3Phkak"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_STAT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-3Phkak'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_4e6c6
+        [1/2] /usr/bin/c++   -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_4e6c6.dir/CheckIncludeFile.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-3Phkak/CheckIncludeFile.cxx
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_4e6c6.dir/CheckIncludeFile.cxx.o -o cmTC_4e6c6   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFileCXX.cmake:98 (try_compile)"
+      - "build-support/macros-and-definitions.cmake:1170 (check_include_file_cxx)"
+      - "CMakeLists.txt:181 (process_options)"
+    checks:
+      - "Looking for C++ include dirent.h"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-EzuIgi"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-EzuIgi"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_DIRENT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-EzuIgi'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_6fc21
+        [1/2] /usr/bin/c++   -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_6fc21.dir/CheckIncludeFile.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-EzuIgi/CheckIncludeFile.cxx
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_6fc21.dir/CheckIncludeFile.cxx.o -o cmTC_6fc21   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFileCXX.cmake:98 (try_compile)"
+      - "build-support/macros-and-definitions.cmake:1171 (check_include_file_cxx)"
+      - "CMakeLists.txt:181 (process_options)"
+    checks:
+      - "Looking for C++ include signal.h"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-lfZtR3"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-lfZtR3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SIGNAL_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-lfZtR3'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_861d7
+        [1/2] /usr/bin/c++   -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_861d7.dir/CheckIncludeFile.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-lfZtR3/CheckIncludeFile.cxx
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_861d7.dir/CheckIncludeFile.cxx.o -o cmTC_861d7   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFileCXX.cmake:98 (try_compile)"
+      - "build-support/macros-and-definitions.cmake:1172 (check_include_file_cxx)"
+      - "CMakeLists.txt:181 (process_options)"
+    checks:
+      - "Looking for C++ include netpacket/packet.h"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-ALFtxY"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-ALFtxY"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_PACKETH"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-ALFtxY'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_e921a
+        [1/2] /usr/bin/c++   -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_e921a.dir/CheckIncludeFile.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-ALFtxY/CheckIncludeFile.cxx
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_e921a.dir/CheckIncludeFile.cxx.o -o cmTC_e921a   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "build-support/macros-and-definitions.cmake:1173 (check_function_exists)"
+      - "CMakeLists.txt:181 (process_options)"
+    checks:
+      - "Looking for getenv"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-hSHFEG"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-hSHFEG"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_GETENV"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-hSHFEG'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_3380a
+        [1/2] /usr/bin/c++   -DCHECK_FUNCTION_EXISTS=getenv -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_3380a.dir/CheckFunctionExists.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-hSHFEG/CheckFunctionExists.cxx
+        [2/2] : && /usr/bin/c++ -DCHECK_FUNCTION_EXISTS=getenv -std=c++23  CMakeFiles/cmTC_3380a.dir/CheckFunctionExists.cxx.o -o cmTC_3380a   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "src/antenna/CMakeLists.txt:2 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test HAVE_STD_BESSEL_FUNC"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-otPg30"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-otPg30"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STD_BESSEL_FUNC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-otPg30'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_2a2be
+        [1/2] /usr/bin/c++ -DHAVE_STD_BESSEL_FUNC  -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_2a2be.dir/src.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-otPg30/src.cxx
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_2a2be.dir/src.cxx.o -o cmTC_2a2be   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:238 (check_compiler_flag)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "build-support/custom-modules/ns3-module-macros.cmake:193 (generate_export_header)"
+      - "src/applications/CMakeLists.txt:1 (build_lib)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_VISIBILITY"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Pi5i4m"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Pi5i4m"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Pi5i4m'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_a2b26
+        [1/2] /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -std=c++23 -std=c++23 -fPIE   -fvisibility=hidden -o CMakeFiles/cmTC_a2b26.dir/src.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Pi5i4m/src.cxx
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_a2b26.dir/src.cxx.o -o cmTC_a2b26   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:239 (check_compiler_flag)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "build-support/custom-modules/ns3-module-macros.cmake:193 (generate_export_header)"
+      - "src/applications/CMakeLists.txt:1 (build_lib)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Hu4tU9"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Hu4tU9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Hu4tU9'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_1450a
+        [1/2] /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -std=c++23 -std=c++23 -fPIE   -fvisibility-inlines-hidden -o CMakeFiles/cmTC_1450a.dir/src.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Hu4tU9/src.cxx
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_1450a.dir/src.cxx.o -o cmTC_1450a   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckSourceCompiles.cmake:89 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "build-support/custom-modules/ns3-module-macros.cmake:193 (generate_export_header)"
+      - "src/applications/CMakeLists.txt:1 (build_lib)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-yhJxj2"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-yhJxj2"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-yhJxj2'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_67648
+        [1/2] /usr/bin/c++ -DCOMPILER_HAS_DEPRECATED_ATTR  -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_67648.dir/src.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-yhJxj2/src.cxx
+        /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-yhJxj2/src.cxx: In function ‘int main()’:
+        /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-yhJxj2/src.cxx:2:33: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
+            2 |     int main() { return somefunc();}
+              |                         ~~~~~~~~^~
+        /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-yhJxj2/src.cxx:1:37: note: declared here
+            1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
+              |                                     ^~~~~~~~
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_67648.dir/src.cxx.o -o cmTC_67648   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "src/core/CMakeLists.txt:28 (check_include_files)"
+    checks:
+      - "Looking for include files boost/units/quantity.hpp, boost/units/systems/si.hpp"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-CM79Qt"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-CM79Qt"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_BOOST_UNITS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-CM79Qt'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_e7c95
+        [1/2] /usr/bin/c++   -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_e7c95.dir/HAVE_BOOST_UNITS.cpp.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-CM79Qt/HAVE_BOOST_UNITS.cpp
+        FAILED: [code=1] CMakeFiles/cmTC_e7c95.dir/HAVE_BOOST_UNITS.cpp.o 
+        /usr/bin/c++   -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_e7c95.dir/HAVE_BOOST_UNITS.cpp.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-CM79Qt/HAVE_BOOST_UNITS.cpp
+        /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-CM79Qt/HAVE_BOOST_UNITS.cpp:2:10: fatal error: boost/units/quantity.hpp: No such file or directory
+            2 | #include <boost/units/quantity.hpp>
+              |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFileCXX.cmake:98 (try_compile)"
+      - "src/fd-net-device/CMakeLists.txt:3 (check_include_file_cxx)"
+    checks:
+      - "Looking for C++ include net/ethernet.h"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-dXyjJV"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-dXyjJV"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_NET_ETHERNET_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-dXyjJV'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_51f49
+        [1/2] /usr/bin/c++   -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_51f49.dir/CheckIncludeFile.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-dXyjJV/CheckIncludeFile.cxx
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_51f49.dir/CheckIncludeFile.cxx.o -o cmTC_51f49   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFileCXX.cmake:98 (try_compile)"
+      - "src/fd-net-device/CMakeLists.txt:7 (check_include_file_cxx)"
+    checks:
+      - "Looking for C++ include netpacket/packet.h"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-1QPJv5"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-1QPJv5"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_PACKET_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-1QPJv5'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_734f8
+        [1/2] /usr/bin/c++   -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_734f8.dir/CheckIncludeFile.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-1QPJv5/CheckIncludeFile.cxx
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_734f8.dir/CheckIncludeFile.cxx.o -o cmTC_734f8   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFileCXX.cmake:98 (try_compile)"
+      - "src/fd-net-device/CMakeLists.txt:11 (check_include_file_cxx)"
+    checks:
+      - "Looking for C++ include net/if.h"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-ixTFfI"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-ixTFfI"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_IF_NETS_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-ixTFfI'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_31342
+        [1/2] /usr/bin/c++   -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_31342.dir/CheckIncludeFile.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-ixTFfI/CheckIncludeFile.cxx
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_31342.dir/CheckIncludeFile.cxx.o -o cmTC_31342   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFileCXX.cmake:98 (try_compile)"
+      - "src/fd-net-device/CMakeLists.txt:15 (check_include_file_cxx)"
+    checks:
+      - "Looking for C++ include linux/if_tun.h"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-b8D6VE"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-b8D6VE"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_IF_TUN_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-b8D6VE'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_53be9
+        [1/2] /usr/bin/c++   -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_53be9.dir/CheckIncludeFile.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-b8D6VE/CheckIncludeFile.cxx
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_53be9.dir/CheckIncludeFile.cxx.o -o cmTC_53be9   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFileCXX.cmake:98 (try_compile)"
+      - "src/fd-net-device/CMakeLists.txt:19 (check_include_file_cxx)"
+    checks:
+      - "Looking for C++ include net/netmap_user.h"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-LaGp2Q"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-LaGp2Q"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_NETMAP_USER_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-LaGp2Q'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_9a9d5
+        [1/2] /usr/bin/c++   -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_9a9d5.dir/CheckIncludeFile.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-LaGp2Q/CheckIncludeFile.cxx
+        FAILED: [code=1] CMakeFiles/cmTC_9a9d5.dir/CheckIncludeFile.cxx.o 
+        /usr/bin/c++   -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_9a9d5.dir/CheckIncludeFile.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-LaGp2Q/CheckIncludeFile.cxx
+        /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-LaGp2Q/CheckIncludeFile.cxx:1:10: fatal error: net/netmap_user.h: No such file or directory
+            1 | #include <net/netmap_user.h>
+              |          ^~~~~~~~~~~~~~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFileCXX.cmake:98 (try_compile)"
+      - "src/fd-net-device/CMakeLists.txt:23 (check_include_file_cxx)"
+    checks:
+      - "Looking for C++ include sys/ioctl.h"
+    directories:
+      source: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-E7tb1u"
+      binary: "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-E7tb1u"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kevinsg/ns-3.48/build-support/custom-modules;/home/kevinsg/ns-3.48/build-support/3rd-party"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_IOCTL_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-E7tb1u'
+        
+        Run Build Command(s): /usr/bin/ninja-build -v cmTC_c4c6d
+        [1/2] /usr/bin/c++   -std=c++23 -std=c++23 -fPIE -o CMakeFiles/cmTC_c4c6d.dir/CheckIncludeFile.cxx.o -c /home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-E7tb1u/CheckIncludeFile.cxx
+        [2/2] : && /usr/bin/c++ -std=c++23  CMakeFiles/cmTC_c4c6d.dir/CheckIncludeFile.cxx.o -o cmTC_c4c6d   && :
+        
+      exitCode: 0
+...
