@@ -1,4 +1,4 @@
-# Install script for directory: /home/kevinsg/ns-3.48/src/internet-apps
+# Install script for directory: /home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kevinsg/ns-3.48/cmake-cache/src/internet-apps/examples/cmake_install.cmake")
+  include("/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/internet-apps/examples/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -54,12 +54,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-internet-apps-default.so"
          RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES "/home/kevinsg/ns-3.48/build/lib64/libns3.48-internet-apps-default.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64/libns3.48-internet-apps-default.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-internet-apps-default.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-internet-apps-default.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-internet-apps-default.so"
-         OLD_RPATH "/home/kevinsg/ns-3.48/build/lib64::::::::::::::::::::::::::::::::::::::::::::::::"
+         OLD_RPATH "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64:::::::::::::::::::::::::::::::::::"
          NEW_RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-internet-apps-default.so")
@@ -72,31 +72,31 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ns3" TYPE FILE FILES
-    "/home/kevinsg/ns-3.48/src/internet-apps/helper/dhcp-helper.h"
-    "/home/kevinsg/ns-3.48/src/internet-apps/helper/dhcp6-helper.h"
-    "/home/kevinsg/ns-3.48/src/internet-apps/helper/ping-helper.h"
-    "/home/kevinsg/ns-3.48/src/internet-apps/helper/radvd-helper.h"
-    "/home/kevinsg/ns-3.48/src/internet-apps/helper/v4traceroute-helper.h"
-    "/home/kevinsg/ns-3.48/src/internet-apps/model/dhcp-client.h"
-    "/home/kevinsg/ns-3.48/src/internet-apps/model/dhcp-header.h"
-    "/home/kevinsg/ns-3.48/src/internet-apps/model/dhcp-server.h"
-    "/home/kevinsg/ns-3.48/src/internet-apps/model/dhcp6-client.h"
-    "/home/kevinsg/ns-3.48/src/internet-apps/model/dhcp6-duid.h"
-    "/home/kevinsg/ns-3.48/src/internet-apps/model/dhcp6-header.h"
-    "/home/kevinsg/ns-3.48/src/internet-apps/model/dhcp6-options.h"
-    "/home/kevinsg/ns-3.48/src/internet-apps/model/dhcp6-server.h"
-    "/home/kevinsg/ns-3.48/src/internet-apps/model/ping.h"
-    "/home/kevinsg/ns-3.48/src/internet-apps/model/radvd-interface.h"
-    "/home/kevinsg/ns-3.48/src/internet-apps/model/radvd-prefix.h"
-    "/home/kevinsg/ns-3.48/src/internet-apps/model/radvd.h"
-    "/home/kevinsg/ns-3.48/src/internet-apps/model/v4traceroute.h"
-    "/home/kevinsg/ns-3.48/build/include/ns3/internet-apps-module.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/helper/dhcp-helper.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/helper/dhcp6-helper.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/helper/ping-helper.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/helper/radvd-helper.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/helper/v4traceroute-helper.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/model/dhcp-client.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/model/dhcp-header.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/model/dhcp-server.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/model/dhcp6-client.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/model/dhcp6-duid.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/model/dhcp6-header.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/model/dhcp6-options.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/model/dhcp6-server.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/model/ping.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/model/radvd-interface.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/model/radvd-prefix.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/model/radvd.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/internet-apps/model/v4traceroute.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/build/include/ns3/internet-apps-module.h"
     )
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kevinsg/ns-3.48/cmake-cache/src/internet-apps/install_local_manifest.txt"
+  file(WRITE "/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/internet-apps/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

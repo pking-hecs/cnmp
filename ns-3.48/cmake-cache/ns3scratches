@@ -1,5 +1,7 @@
-/home/kevinsg/ns-3.48/scratch/scratch-simulator.cc
-/home/kevinsg/ns-3.48/scratch/subdir/scratch-subdir.cc
-/home/kevinsg/ns-3.48/scratch/subdir/scratch-subdir-additional-header.cc
-/home/kevinsg/ns-3.48/scratch/nested-subdir/scratch-nested-subdir-executable.cc
-/home/kevinsg/ns-3.48/scratch/nested-subdir/lib/scratch-nested-subdir-library-source.cc
+/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/scratch-simulator.cc
+/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/nakr-smoke-single.cc
+/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/nakr-smoke.cc
+/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/subdir/scratch-subdir.cc
+/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/subdir/scratch-subdir-additional-header.cc
+/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/nested-subdir/scratch-nested-subdir-executable.cc
+/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/nested-subdir/lib/scratch-nested-subdir-library-source.cc

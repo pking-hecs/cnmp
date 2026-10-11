@@ -3,35 +3,39 @@
 cmake_policy(SET CMP0009 NEW)
 
 # scratch_subdirectories at scratch/CMakeLists.txt:73 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/kevinsg/ns-3.48/scratch/**")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/**")
 set(OLD_GLOB
-  "/home/kevinsg/ns-3.48/scratch/CMakeLists.txt"
-  "/home/kevinsg/ns-3.48/scratch/nested-subdir"
-  "/home/kevinsg/ns-3.48/scratch/scratch-simulator.cc"
-  "/home/kevinsg/ns-3.48/scratch/subdir"
+  "/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/CMakeLists.txt"
+  "/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/nakr-smoke-single.cc"
+  "/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/nakr-smoke.cc"
+  "/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/nested-subdir"
+  "/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/scratch-simulator.cc"
+  "/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/subdir"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/CMakeFiles/cmake.verify_globs")
 endif()
 
 # single_source_file_scratches at scratch/CMakeLists.txt:67 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/kevinsg/ns-3.48/scratch/[^.]*.cc")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/[^.]*.cc")
 set(OLD_GLOB
-  "/home/kevinsg/ns-3.48/scratch/scratch-simulator.cc"
+  "/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/nakr-smoke-single.cc"
+  "/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/nakr-smoke.cc"
+  "/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/scratch-simulator.cc"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/CMakeFiles/cmake.verify_globs")
 endif()
 
 # scratch_sources at scratch/CMakeLists.txt:98 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/kevinsg/ns-3.48/scratch/subdir/[^.]*.cc")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/subdir/[^.]*.cc")
 set(OLD_GLOB
-  "/home/kevinsg/ns-3.48/scratch/subdir/scratch-subdir-additional-header.cc"
-  "/home/kevinsg/ns-3.48/scratch/subdir/scratch-subdir.cc"
+  "/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/subdir/scratch-subdir-additional-header.cc"
+  "/home/kevinsg/Desktop/cnmp/ns-3.48/scratch/subdir/scratch-subdir.cc"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/home/kevinsg/ns-3.48/cmake-cache/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/CMakeFiles/cmake.verify_globs")
 endif()

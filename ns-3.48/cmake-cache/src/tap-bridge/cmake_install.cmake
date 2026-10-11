@@ -1,4 +1,4 @@
-# Install script for directory: /home/kevinsg/ns-3.48/src/tap-bridge
+# Install script for directory: /home/kevinsg/Desktop/cnmp/ns-3.48/src/tap-bridge
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kevinsg/ns-3.48/cmake-cache/src/tap-bridge/examples/cmake_install.cmake")
+  include("/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/tap-bridge/examples/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -54,12 +54,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-tap-bridge-default.so"
          RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES "/home/kevinsg/ns-3.48/build/lib64/libns3.48-tap-bridge-default.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64/libns3.48-tap-bridge-default.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-tap-bridge-default.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-tap-bridge-default.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-tap-bridge-default.so"
-         OLD_RPATH "/home/kevinsg/ns-3.48/build/lib64::::::::::::::::::::::::::::::::::::::::::::::::"
+         OLD_RPATH "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64:::::::::::::::::::::::::::::::::::"
          NEW_RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-tap-bridge-default.so")
@@ -72,10 +72,10 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ns3" TYPE FILE FILES
-    "/home/kevinsg/ns-3.48/src/tap-bridge/helper/tap-bridge-helper.h"
-    "/home/kevinsg/ns-3.48/src/tap-bridge/model/tap-bridge.h"
-    "/home/kevinsg/ns-3.48/src/tap-bridge/model/tap-encode-decode.h"
-    "/home/kevinsg/ns-3.48/build/include/ns3/tap-bridge-module.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/tap-bridge/helper/tap-bridge-helper.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/tap-bridge/model/tap-bridge.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/tap-bridge/model/tap-encode-decode.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/build/include/ns3/tap-bridge-module.h"
     )
 endif()
 
@@ -86,12 +86,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/libexec/ns3/ns3.48-tap-creator-default"
          RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/libexec/ns3" TYPE EXECUTABLE FILES "/home/kevinsg/ns-3.48/build/src/tap-bridge/ns3.48-tap-creator-default")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/libexec/ns3" TYPE EXECUTABLE FILES "/home/kevinsg/Desktop/cnmp/ns-3.48/build/src/tap-bridge/ns3.48-tap-creator-default")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/libexec/ns3/ns3.48-tap-creator-default" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/libexec/ns3/ns3.48-tap-creator-default")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/libexec/ns3/ns3.48-tap-creator-default"
-         OLD_RPATH "/home/kevinsg/ns-3.48/build/lib64::::::::::::::::::::::::::::::::::::::::::::::::"
+         OLD_RPATH "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64:::::::::::::::::::::::::::::::::::"
          NEW_RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/libexec/ns3/ns3.48-tap-creator-default")
@@ -102,6 +102,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kevinsg/ns-3.48/cmake-cache/src/tap-bridge/install_local_manifest.txt"
+  file(WRITE "/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/tap-bridge/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

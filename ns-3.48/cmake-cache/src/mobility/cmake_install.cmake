@@ -1,4 +1,4 @@
-# Install script for directory: /home/kevinsg/ns-3.48/src/mobility
+# Install script for directory: /home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kevinsg/ns-3.48/cmake-cache/src/mobility/examples/cmake_install.cmake")
+  include("/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/mobility/examples/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -54,12 +54,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-mobility-default.so"
          RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES "/home/kevinsg/ns-3.48/build/lib64/libns3.48-mobility-default.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64/libns3.48-mobility-default.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-mobility-default.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-mobility-default.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-mobility-default.so"
-         OLD_RPATH "/home/kevinsg/ns-3.48/build/lib64::::::::::::::::::::::::::::::::::::::::::::::::"
+         OLD_RPATH "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64:::::::::::::::::::::::::::::::::::"
          NEW_RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-mobility-default.so")
@@ -72,40 +72,40 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ns3" TYPE FILE FILES
-    "/home/kevinsg/ns-3.48/src/mobility/helper/leo-orbit-node-helper.h"
-    "/home/kevinsg/ns-3.48/src/mobility/helper/group-mobility-helper.h"
-    "/home/kevinsg/ns-3.48/src/mobility/helper/mobility-helper.h"
-    "/home/kevinsg/ns-3.48/src/mobility/helper/ns2-mobility-helper.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/box.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/constant-acceleration-mobility-model.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/constant-position-mobility-model.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/constant-velocity-helper.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/constant-velocity-mobility-model.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/gauss-markov-mobility-model.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/geocentric-constant-position-mobility-model.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/geocentric-ecef-mobility-model.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/geographic-positions.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/hierarchical-mobility-model.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/leo-circular-orbit-mobility-model.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/leo-circular-orbit-position-allocator.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/leo-orbital-shell.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/mobility-model.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/position-allocator.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/random-direction-2d-mobility-model.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/random-walk-2d-mobility-model.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/random-waypoint-mobility-model.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/rectangle.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/steady-state-random-waypoint-mobility-model.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/waypoint-mobility-model.h"
-    "/home/kevinsg/ns-3.48/src/mobility/model/waypoint.h"
-    "/home/kevinsg/ns-3.48/build/include/ns3/mobility-module.h"
-    "/home/kevinsg/ns-3.48/build/include/ns3/mobility-export.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/helper/leo-orbit-node-helper.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/helper/group-mobility-helper.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/helper/mobility-helper.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/helper/ns2-mobility-helper.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/box.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/constant-acceleration-mobility-model.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/constant-position-mobility-model.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/constant-velocity-helper.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/constant-velocity-mobility-model.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/gauss-markov-mobility-model.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/geocentric-constant-position-mobility-model.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/geocentric-ecef-mobility-model.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/geographic-positions.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/hierarchical-mobility-model.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/leo-circular-orbit-mobility-model.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/leo-circular-orbit-position-allocator.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/leo-orbital-shell.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/mobility-model.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/position-allocator.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/random-direction-2d-mobility-model.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/random-walk-2d-mobility-model.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/random-waypoint-mobility-model.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/rectangle.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/steady-state-random-waypoint-mobility-model.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/waypoint-mobility-model.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/mobility/model/waypoint.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/build/include/ns3/mobility-module.h"
+    "/home/kevinsg/Desktop/cnmp/ns-3.48/build/include/ns3/mobility-export.h"
     )
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kevinsg/ns-3.48/cmake-cache/src/mobility/install_local_manifest.txt"
+  file(WRITE "/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/mobility/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

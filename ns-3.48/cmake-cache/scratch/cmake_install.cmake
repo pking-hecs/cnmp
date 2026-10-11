@@ -1,4 +1,4 @@
-# Install script for directory: /home/kevinsg/ns-3.48/scratch
+# Install script for directory: /home/kevinsg/Desktop/cnmp/ns-3.48/scratch
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,12 +44,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kevinsg/ns-3.48/cmake-cache/scratch/nested-subdir/cmake_install.cmake")
+  include("/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/scratch/nested-subdir/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kevinsg/ns-3.48/cmake-cache/scratch/install_local_manifest.txt"
+  file(WRITE "/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/scratch/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
