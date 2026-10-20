@@ -1,4 +1,4 @@
-# Install script for directory: /home/kevinsg/Desktop/cnmp/ns-3.48/src/lr-wpan
+# Install script for directory: /home/nasre/cnmp/ns-3.48/src/lr-wpan
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -44,25 +44,25 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/lr-wpan/examples/cmake_install.cmake")
+  include("/home/nasre/cnmp/ns-3.48/cmake-cache/src/lr-wpan/examples/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-lr-wpan-default.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-lr-wpan-default.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-lr-wpan-default.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-lr-wpan-default.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-lr-wpan-default.so"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-lr-wpan-default.so"
          RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64/libns3.48-lr-wpan-default.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-lr-wpan-default.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-lr-wpan-default.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/nasre/cnmp/ns-3.48/build/lib/libns3.48-lr-wpan-default.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-lr-wpan-default.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-lr-wpan-default.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-lr-wpan-default.so"
-         OLD_RPATH "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64:::::::::::::::::::::::::::::::::::"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-lr-wpan-default.so"
+         OLD_RPATH "/home/nasre/cnmp/ns-3.48/build/lib:::::::::::::::::::::::::::::::::::::::::::::::"
          NEW_RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-lr-wpan-default.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-lr-wpan-default.so")
     endif()
   endif()
 endif()
@@ -72,29 +72,29 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ns3" TYPE FILE FILES
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/lr-wpan/helper/lr-wpan-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-constants.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-csmaca.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-error-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-fields.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-interference-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-lqi-tag.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-mac-header.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-mac-pl-headers.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-mac-trailer.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-mac-base.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-mac.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-net-device.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-phy.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-spectrum-signal-parameters.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-spectrum-value-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/build/include/ns3/lr-wpan-module.h"
+    "/home/nasre/cnmp/ns-3.48/src/lr-wpan/helper/lr-wpan-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-constants.h"
+    "/home/nasre/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-csmaca.h"
+    "/home/nasre/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-error-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-fields.h"
+    "/home/nasre/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-interference-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-lqi-tag.h"
+    "/home/nasre/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-mac-header.h"
+    "/home/nasre/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-mac-pl-headers.h"
+    "/home/nasre/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-mac-trailer.h"
+    "/home/nasre/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-mac-base.h"
+    "/home/nasre/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-mac.h"
+    "/home/nasre/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-net-device.h"
+    "/home/nasre/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-phy.h"
+    "/home/nasre/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-spectrum-signal-parameters.h"
+    "/home/nasre/cnmp/ns-3.48/src/lr-wpan/model/lr-wpan-spectrum-value-helper.h"
+    "/home/nasre/cnmp/ns-3.48/build/include/ns3/lr-wpan-module.h"
     )
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/lr-wpan/install_local_manifest.txt"
+  file(WRITE "/home/nasre/cnmp/ns-3.48/cmake-cache/src/lr-wpan/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

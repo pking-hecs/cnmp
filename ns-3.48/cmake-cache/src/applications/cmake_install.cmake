@@ -1,4 +1,4 @@
-# Install script for directory: /home/kevinsg/Desktop/cnmp/ns-3.48/src/applications
+# Install script for directory: /home/nasre/cnmp/ns-3.48/src/applications
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -44,25 +44,25 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/applications/examples/cmake_install.cmake")
+  include("/home/nasre/cnmp/ns-3.48/cmake-cache/src/applications/examples/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-applications-default.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-applications-default.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-applications-default.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-applications-default.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-applications-default.so"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-applications-default.so"
          RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64/libns3.48-applications-default.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-applications-default.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-applications-default.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/nasre/cnmp/ns-3.48/build/lib/libns3.48-applications-default.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-applications-default.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-applications-default.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-applications-default.so"
-         OLD_RPATH "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64:::::::::::::::::::::::::::::::::::"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-applications-default.so"
+         OLD_RPATH "/home/nasre/cnmp/ns-3.48/build/lib:::::::::::::::::::::::::::::::::::::::::::::::"
          NEW_RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-applications-default.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-applications-default.so")
     endif()
   endif()
 endif()
@@ -72,43 +72,43 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ns3" TYPE FILE FILES
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/helper/bulk-send-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/helper/on-off-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/helper/packet-sink-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/helper/three-gpp-http-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/helper/udp-client-server-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/helper/udp-echo-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/application-packet-probe.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/bulk-send-application.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/onoff-application.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/packet-loss-counter.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/packet-sink.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/rta-tig-mobile-gaming.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/seq-ts-echo-header.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/seq-ts-header.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/seq-ts-size-header.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/sink-application.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/source-application.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/tgax-video-traffic.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/tgax-virtual-desktop.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/tgax-voip-traffic.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/three-gpp-http-client.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/three-gpp-http-header.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/three-gpp-http-server.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/three-gpp-http-variables.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/udp-client.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/udp-echo-client.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/udp-echo-server.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/udp-server.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/applications/model/udp-trace-client.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/build/include/ns3/applications-module.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/build/include/ns3/applications-export.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/helper/bulk-send-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/helper/on-off-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/helper/packet-sink-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/helper/three-gpp-http-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/helper/udp-client-server-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/helper/udp-echo-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/application-packet-probe.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/bulk-send-application.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/onoff-application.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/packet-loss-counter.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/packet-sink.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/rta-tig-mobile-gaming.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/seq-ts-echo-header.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/seq-ts-header.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/seq-ts-size-header.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/sink-application.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/source-application.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/tgax-video-traffic.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/tgax-virtual-desktop.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/tgax-voip-traffic.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/three-gpp-http-client.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/three-gpp-http-header.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/three-gpp-http-server.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/three-gpp-http-variables.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/udp-client.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/udp-echo-client.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/udp-echo-server.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/udp-server.h"
+    "/home/nasre/cnmp/ns-3.48/src/applications/model/udp-trace-client.h"
+    "/home/nasre/cnmp/ns-3.48/build/include/ns3/applications-module.h"
+    "/home/nasre/cnmp/ns-3.48/build/include/ns3/applications-export.h"
     )
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/applications/install_local_manifest.txt"
+  file(WRITE "/home/nasre/cnmp/ns-3.48/cmake-cache/src/applications/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

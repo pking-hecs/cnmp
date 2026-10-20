@@ -1,4 +1,4 @@
-# Install script for directory: /home/kevinsg/Desktop/cnmp/ns-3.48/src/sixlowpan
+# Install script for directory: /home/nasre/cnmp/ns-3.48/src/sixlowpan
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -44,25 +44,25 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/sixlowpan/examples/cmake_install.cmake")
+  include("/home/nasre/cnmp/ns-3.48/cmake-cache/src/sixlowpan/examples/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-sixlowpan-default.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-sixlowpan-default.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-sixlowpan-default.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-sixlowpan-default.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-sixlowpan-default.so"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-sixlowpan-default.so"
          RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64/libns3.48-sixlowpan-default.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-sixlowpan-default.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-sixlowpan-default.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/nasre/cnmp/ns-3.48/build/lib/libns3.48-sixlowpan-default.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-sixlowpan-default.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-sixlowpan-default.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-sixlowpan-default.so"
-         OLD_RPATH "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64:::::::::::::::::::::::::::::::::::"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-sixlowpan-default.so"
+         OLD_RPATH "/home/nasre/cnmp/ns-3.48/build/lib:::::::::::::::::::::::::::::::::::::::::::::::"
          NEW_RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-sixlowpan-default.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-sixlowpan-default.so")
     endif()
   endif()
 endif()
@@ -72,21 +72,21 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ns3" TYPE FILE FILES
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/sixlowpan/helper/sixlowpan-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/sixlowpan/model/sixlowpan-header.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/sixlowpan/model/sixlowpan-nd-context.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/sixlowpan/model/sixlowpan-nd-header.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/sixlowpan/model/sixlowpan-nd-prefix.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/sixlowpan/model/sixlowpan-nd-protocol.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/sixlowpan/model/sixlowpan-net-device.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/sixlowpan/model/sixlowpan-nd-binding-table.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/build/include/ns3/sixlowpan-module.h"
+    "/home/nasre/cnmp/ns-3.48/src/sixlowpan/helper/sixlowpan-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/sixlowpan/model/sixlowpan-header.h"
+    "/home/nasre/cnmp/ns-3.48/src/sixlowpan/model/sixlowpan-nd-context.h"
+    "/home/nasre/cnmp/ns-3.48/src/sixlowpan/model/sixlowpan-nd-header.h"
+    "/home/nasre/cnmp/ns-3.48/src/sixlowpan/model/sixlowpan-nd-prefix.h"
+    "/home/nasre/cnmp/ns-3.48/src/sixlowpan/model/sixlowpan-nd-protocol.h"
+    "/home/nasre/cnmp/ns-3.48/src/sixlowpan/model/sixlowpan-net-device.h"
+    "/home/nasre/cnmp/ns-3.48/src/sixlowpan/model/sixlowpan-nd-binding-table.h"
+    "/home/nasre/cnmp/ns-3.48/build/include/ns3/sixlowpan-module.h"
     )
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/sixlowpan/install_local_manifest.txt"
+  file(WRITE "/home/nasre/cnmp/ns-3.48/cmake-cache/src/sixlowpan/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

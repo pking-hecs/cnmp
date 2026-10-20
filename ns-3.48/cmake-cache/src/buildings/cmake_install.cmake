@@ -1,4 +1,4 @@
-# Install script for directory: /home/kevinsg/Desktop/cnmp/ns-3.48/src/buildings
+# Install script for directory: /home/nasre/cnmp/ns-3.48/src/buildings
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -44,25 +44,25 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/buildings/examples/cmake_install.cmake")
+  include("/home/nasre/cnmp/ns-3.48/cmake-cache/src/buildings/examples/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-buildings-default.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-buildings-default.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-buildings-default.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-buildings-default.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-buildings-default.so"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-buildings-default.so"
          RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64/libns3.48-buildings-default.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-buildings-default.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-buildings-default.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/nasre/cnmp/ns-3.48/build/lib/libns3.48-buildings-default.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-buildings-default.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-buildings-default.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-buildings-default.so"
-         OLD_RPATH "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64:::::::::::::::::::::::::::::::::::"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-buildings-default.so"
+         OLD_RPATH "/home/nasre/cnmp/ns-3.48/build/lib:::::::::::::::::::::::::::::::::::::::::::::::"
          NEW_RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-buildings-default.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-buildings-default.so")
     endif()
   endif()
 endif()
@@ -72,27 +72,27 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ns3" TYPE FILE FILES
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/buildings/helper/building-allocator.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/buildings/helper/building-container.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/buildings/helper/building-position-allocator.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/buildings/helper/buildings-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/buildings/model/building-list.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/buildings/model/building.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/buildings/model/buildings-channel-condition-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/buildings/model/buildings-propagation-loss-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/buildings/model/hybrid-buildings-propagation-loss-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/buildings/model/itu-r-1238-propagation-loss-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/buildings/model/mobility-building-info.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/buildings/model/oh-buildings-propagation-loss-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/buildings/model/random-walk-2d-outdoor-mobility-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/buildings/model/three-gpp-v2v-channel-condition-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/build/include/ns3/buildings-module.h"
+    "/home/nasre/cnmp/ns-3.48/src/buildings/helper/building-allocator.h"
+    "/home/nasre/cnmp/ns-3.48/src/buildings/helper/building-container.h"
+    "/home/nasre/cnmp/ns-3.48/src/buildings/helper/building-position-allocator.h"
+    "/home/nasre/cnmp/ns-3.48/src/buildings/helper/buildings-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/buildings/model/building-list.h"
+    "/home/nasre/cnmp/ns-3.48/src/buildings/model/building.h"
+    "/home/nasre/cnmp/ns-3.48/src/buildings/model/buildings-channel-condition-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/buildings/model/buildings-propagation-loss-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/buildings/model/hybrid-buildings-propagation-loss-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/buildings/model/itu-r-1238-propagation-loss-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/buildings/model/mobility-building-info.h"
+    "/home/nasre/cnmp/ns-3.48/src/buildings/model/oh-buildings-propagation-loss-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/buildings/model/random-walk-2d-outdoor-mobility-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/buildings/model/three-gpp-v2v-channel-condition-model.h"
+    "/home/nasre/cnmp/ns-3.48/build/include/ns3/buildings-module.h"
     )
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/buildings/install_local_manifest.txt"
+  file(WRITE "/home/nasre/cnmp/ns-3.48/cmake-cache/src/buildings/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

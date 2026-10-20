@@ -1,6 +1,6 @@
 ---- Summary of ns-3 settings:
 Build profile                 : default
-Build directory               : /home/kevinsg/Desktop/cnmp/ns-3.48/build
+Build directory               : /home/nasre/cnmp/ns-3.48/build
 Build with runtime asserts    : [32mON[0m
 Build with runtime logging    : [32mON[0m
 Build version embedding       : OFF (not requested)

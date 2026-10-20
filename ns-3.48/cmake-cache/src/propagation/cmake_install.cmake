@@ -1,4 +1,4 @@
-# Install script for directory: /home/kevinsg/Desktop/cnmp/ns-3.48/src/propagation
+# Install script for directory: /home/nasre/cnmp/ns-3.48/src/propagation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -44,25 +44,25 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/propagation/examples/cmake_install.cmake")
+  include("/home/nasre/cnmp/ns-3.48/cmake-cache/src/propagation/examples/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-propagation-default.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-propagation-default.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-propagation-default.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-propagation-default.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-propagation-default.so"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-propagation-default.so"
          RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64/libns3.48-propagation-default.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-propagation-default.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-propagation-default.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/nasre/cnmp/ns-3.48/build/lib/libns3.48-propagation-default.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-propagation-default.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-propagation-default.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-propagation-default.so"
-         OLD_RPATH "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64:::::::::::::::::::::::::::::::::::"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-propagation-default.so"
+         OLD_RPATH "/home/nasre/cnmp/ns-3.48/build/lib:::::::::::::::::::::::::::::::::::::::::::::::"
          NEW_RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-propagation-default.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-propagation-default.so")
     endif()
   endif()
 endif()
@@ -72,28 +72,28 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ns3" TYPE FILE FILES
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/propagation/model/channel-condition-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/propagation/model/cost231-propagation-loss-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/propagation/model/itu-r-1411-los-propagation-loss-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/propagation/model/itu-r-1411-nlos-over-rooftop-propagation-loss-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/propagation/model/jakes-process.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/propagation/model/jakes-propagation-loss-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/propagation/model/kun-2600-mhz-propagation-loss-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/propagation/model/okumura-hata-propagation-loss-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/propagation/model/probabilistic-v2v-channel-condition-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/propagation/model/propagation-cache.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/propagation/model/propagation-delay-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/propagation/model/propagation-environment.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/propagation/model/propagation-loss-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/propagation/model/three-gpp-propagation-loss-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/propagation/model/three-gpp-v2v-propagation-loss-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/build/include/ns3/propagation-module.h"
+    "/home/nasre/cnmp/ns-3.48/src/propagation/model/channel-condition-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/propagation/model/cost231-propagation-loss-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/propagation/model/itu-r-1411-los-propagation-loss-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/propagation/model/itu-r-1411-nlos-over-rooftop-propagation-loss-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/propagation/model/jakes-process.h"
+    "/home/nasre/cnmp/ns-3.48/src/propagation/model/jakes-propagation-loss-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/propagation/model/kun-2600-mhz-propagation-loss-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/propagation/model/okumura-hata-propagation-loss-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/propagation/model/probabilistic-v2v-channel-condition-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/propagation/model/propagation-cache.h"
+    "/home/nasre/cnmp/ns-3.48/src/propagation/model/propagation-delay-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/propagation/model/propagation-environment.h"
+    "/home/nasre/cnmp/ns-3.48/src/propagation/model/propagation-loss-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/propagation/model/three-gpp-propagation-loss-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/propagation/model/three-gpp-v2v-propagation-loss-model.h"
+    "/home/nasre/cnmp/ns-3.48/build/include/ns3/propagation-module.h"
     )
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/propagation/install_local_manifest.txt"
+  file(WRITE "/home/nasre/cnmp/ns-3.48/cmake-cache/src/propagation/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -1,0 +1,5 @@
+case,kvBytes,thresholdBytes,linkRateMbps,linkDelayMs,recomputeMs,holderLoad,inFlightPulls,destinationLoad,observedThroughputMbps,telemetryAgeMs,expected_stress
+small-kv-low-contention,1048576,4194304,100,10,80,0.1,0,0.1,90,0,low transfer cost
+large-kv-high-contention,16777216,4194304,100,10,80,0.8,6,0.2,15,100,high transfer cost
+busy-holder,2097152,4194304,100,10,80,0.95,1,0.1,70,20,high holder load
+low-bandwidth,4194304,4194304,10,10,80,0.2,2,0.2,8,50,low network capacity

@@ -1,0 +1,6 @@
+case,kvBytes,thresholdBytes,linkRateMbps,linkDelayMs,recomputeMs,holderLoad,inFlightPulls,destinationLoad,observedThroughputMbps,telemetryAgeMs,purpose
+fixed-threshold-pull,1024,4194304,100,10,80,0.2,0,0.1,90,0,verify small payload pulls
+fixed-threshold-recompute,16777216,4194304,100,10,80,0.2,0,0.1,90,0,verify large payload recomputes
+cost-aware-holder,16777216,4194304,100,10,80,0.1,0,0.1,90,0,verify holder can win
+cost-aware-recompute,16777216,4194304,10,10,1,0.95,0,0,8,0,verify recomputation can win
+network-aware-pull,1024,4194304,100,10,80,1,0,0,90,0,verify pull can beat overloaded holder

@@ -1,4 +1,4 @@
-# Install script for directory: /home/kevinsg/Desktop/cnmp/ns-3.48/src/stats
+# Install script for directory: /home/nasre/cnmp/ns-3.48/src/stats
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -44,25 +44,25 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/stats/examples/cmake_install.cmake")
+  include("/home/nasre/cnmp/ns-3.48/cmake-cache/src/stats/examples/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-stats-default.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-stats-default.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-stats-default.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-stats-default.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-stats-default.so"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-stats-default.so"
          RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64/libns3.48-stats-default.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-stats-default.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-stats-default.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/nasre/cnmp/ns-3.48/build/lib/libns3.48-stats-default.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-stats-default.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-stats-default.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-stats-default.so"
-         OLD_RPATH "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64:::::::::::::::::::::::::::::::::::"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-stats-default.so"
+         OLD_RPATH "/home/nasre/cnmp/ns-3.48/build/lib:::::::::::::::::::::::::::::::::::::::::::::::"
          NEW_RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-stats-default.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-stats-default.so")
     endif()
   endif()
 endif()
@@ -71,43 +71,43 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ns3" TYPE FILE FILES "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/sqlite-output.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ns3" TYPE FILE FILES "/home/nasre/cnmp/ns-3.48/src/stats/model/sqlite-output.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ns3" TYPE FILE FILES
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/sqlite-data-output.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/helper/file-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/helper/gnuplot-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/average.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/basic-data-calculators.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/boolean-probe.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/data-calculator.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/data-collection-object.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/data-collector.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/data-output-interface.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/double-probe.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/file-aggregator.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/get-wildcard-matches.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/gnuplot-aggregator.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/gnuplot.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/histogram.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/omnet-data-output.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/probe.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/stats.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/time-data-calculators.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/time-probe.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/time-series-adaptor.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/uinteger-16-probe.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/uinteger-32-probe.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/stats/model/uinteger-8-probe.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/build/include/ns3/stats-module.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/sqlite-data-output.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/helper/file-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/helper/gnuplot-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/average.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/basic-data-calculators.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/boolean-probe.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/data-calculator.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/data-collection-object.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/data-collector.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/data-output-interface.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/double-probe.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/file-aggregator.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/get-wildcard-matches.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/gnuplot-aggregator.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/gnuplot.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/histogram.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/omnet-data-output.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/probe.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/stats.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/time-data-calculators.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/time-probe.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/time-series-adaptor.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/uinteger-16-probe.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/uinteger-32-probe.h"
+    "/home/nasre/cnmp/ns-3.48/src/stats/model/uinteger-8-probe.h"
+    "/home/nasre/cnmp/ns-3.48/build/include/ns3/stats-module.h"
     )
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/stats/install_local_manifest.txt"
+  file(WRITE "/home/nasre/cnmp/ns-3.48/cmake-cache/src/stats/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -1,0 +1,60 @@
+===== small-kv-low-contention =====
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+NAKR Phase 2: routing decision model (synthetic estimates)
+kvBytes=1048576 thresholdBytes=4194304 linkRateMbps=100.000 linkDelayMs=10.000 recomputeMs=80.000 holderLoad=0.100 inFlightPulls=0 destinationLoad=0.100 observedThroughputMbps=90.000 telemetryAgeMs=0.000
+
+Nominal estimated costs (ms):
+  execute_at_holder=30.000 pull_kv=113.886 recompute=90.000
+Network-aware estimated costs (ms):
+  execute_at_holder=30.000 pull_kv=123.207 recompute=90.000
+
+fixed_threshold,EXECUTE_AT_HOLDER,30.000 ms
+cost_aware,EXECUTE_AT_HOLDER,30.000 ms
+network_aware,EXECUTE_AT_HOLDER,30.000 ms
+
+===== large-kv-high-contention =====
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+NAKR Phase 2: routing decision model (synthetic estimates)
+kvBytes=16777216 thresholdBytes=4194304 linkRateMbps=100.000 linkDelayMs=10.000 recomputeMs=80.000 holderLoad=0.800 inFlightPulls=6 destinationLoad=0.200 observedThroughputMbps=15.000 telemetryAgeMs=100.000
+
+Nominal estimated costs (ms):
+  execute_at_holder=65.000 pull_kv=1377.177 recompute=95.000
+Network-aware estimated costs (ms):
+  execute_at_holder=65.000 pull_kv=9005.849 recompute=95.000
+
+fixed_threshold,EXECUTE_AT_HOLDER,65.000 ms
+cost_aware,EXECUTE_AT_HOLDER,65.000 ms
+network_aware,EXECUTE_AT_HOLDER,65.000 ms
+
+===== busy-holder =====
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+NAKR Phase 2: routing decision model (synthetic estimates)
+kvBytes=2097152 thresholdBytes=4194304 linkRateMbps=100.000 linkDelayMs=10.000 recomputeMs=80.000 holderLoad=0.950 inFlightPulls=1 destinationLoad=0.100 observedThroughputMbps=70.000 telemetryAgeMs=20.000
+
+Nominal estimated costs (ms):
+  execute_at_holder=72.500 pull_kv=197.772 recompute=90.000
+Network-aware estimated costs (ms):
+  execute_at_holder=72.500 pull_kv=273.675 recompute=90.000
+
+fixed_threshold,EXECUTE_AT_HOLDER,72.500 ms
+cost_aware,EXECUTE_AT_HOLDER,72.500 ms
+network_aware,EXECUTE_AT_HOLDER,72.500 ms
+
+===== low-bandwidth =====
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+NAKR Phase 2: routing decision model (synthetic estimates)
+kvBytes=4194304 thresholdBytes=4194304 linkRateMbps=10.000 linkDelayMs=10.000 recomputeMs=80.000 holderLoad=0.200 inFlightPulls=2 destinationLoad=0.200 observedThroughputMbps=8.000 telemetryAgeMs=50.000
+
+Nominal estimated costs (ms):
+  execute_at_holder=35.000 pull_kv=3390.443 recompute=95.000
+Network-aware estimated costs (ms):
+  execute_at_holder=35.000 pull_kv=4237.804 recompute=95.000
+
+fixed_threshold,EXECUTE_AT_HOLDER,35.000 ms
+cost_aware,EXECUTE_AT_HOLDER,35.000 ms
+network_aware,EXECUTE_AT_HOLDER,35.000 ms
+

@@ -1,4 +1,4 @@
-# Install script for directory: /home/kevinsg/Desktop/cnmp/ns-3.48/src/network
+# Install script for directory: /home/nasre/cnmp/ns-3.48/src/network
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -44,25 +44,25 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/network/examples/cmake_install.cmake")
+  include("/home/nasre/cnmp/ns-3.48/cmake-cache/src/network/examples/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-network-default.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-network-default.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-network-default.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-network-default.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-network-default.so"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-network-default.so"
          RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64/libns3.48-network-default.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-network-default.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-network-default.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/nasre/cnmp/ns-3.48/build/lib/libns3.48-network-default.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-network-default.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-network-default.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-network-default.so"
-         OLD_RPATH "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64:::::::::::::::::::::::::::::::::::"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-network-default.so"
+         OLD_RPATH "/home/nasre/cnmp/ns-3.48/build/lib:::::::::::::::::::::::::::::::::::::::::::::::"
          NEW_RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-network-default.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-network-default.so")
     endif()
   endif()
 endif()
@@ -72,90 +72,90 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ns3" TYPE FILE FILES
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/helper/application-container.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/helper/application-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/helper/delay-jitter-estimation.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/helper/net-device-container.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/helper/node-container.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/helper/packet-socket-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/helper/simple-net-device-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/helper/trace-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/address.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/application.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/buffer.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/byte-tag-list.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/channel-list.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/channel.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/chunk.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/header.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/net-device.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/nix-vector.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/node-list.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/node.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/packet-metadata.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/packet-tag-list.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/packet.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/socket-factory.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/socket.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/tag-buffer.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/tag.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/model/trailer.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/address-utils.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/bit-deserializer.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/bit-serializer.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/crc32.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/data-rate.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/drop-tail-queue.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/dynamic-queue-limits.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/error-channel.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/error-model.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/ethernet-header.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/ethernet-trailer.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/flow-id-tag.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/generic-phy.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/header-serialization-test.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/inet-socket-address.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/inet6-socket-address.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/ipv4-address.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/ipv6-address.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/llc-snap-header.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/lollipop-counter.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/mac16-address.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/mac48-address.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/mac64-address.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/mac8-address.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/net-device-queue-interface.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/output-stream-wrapper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/packet-burst.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/packet-data-calculators.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/packet-probe.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/packet-socket-address.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/packet-socket-client.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/packet-socket-factory.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/packet-socket-server.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/packet-socket.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/packetbb.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/pcap-file-wrapper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/pcap-file.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/pcap-test.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/queue-fwd.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/queue-item.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/queue-limits.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/queue-size.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/queue.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/radiotap-header.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/sequence-number.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/simple-channel.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/simple-net-device.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/sll-header.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/network/utils/timestamp-tag.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/build/include/ns3/network-module.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/helper/application-container.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/helper/application-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/helper/delay-jitter-estimation.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/helper/net-device-container.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/helper/node-container.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/helper/packet-socket-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/helper/simple-net-device-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/helper/trace-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/address.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/application.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/buffer.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/byte-tag-list.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/channel-list.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/channel.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/chunk.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/header.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/net-device.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/nix-vector.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/node-list.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/node.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/packet-metadata.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/packet-tag-list.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/packet.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/socket-factory.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/socket.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/tag-buffer.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/tag.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/model/trailer.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/address-utils.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/bit-deserializer.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/bit-serializer.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/crc32.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/data-rate.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/drop-tail-queue.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/dynamic-queue-limits.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/error-channel.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/error-model.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/ethernet-header.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/ethernet-trailer.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/flow-id-tag.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/generic-phy.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/header-serialization-test.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/inet-socket-address.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/inet6-socket-address.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/ipv4-address.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/ipv6-address.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/llc-snap-header.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/lollipop-counter.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/mac16-address.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/mac48-address.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/mac64-address.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/mac8-address.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/net-device-queue-interface.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/output-stream-wrapper.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/packet-burst.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/packet-data-calculators.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/packet-probe.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/packet-socket-address.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/packet-socket-client.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/packet-socket-factory.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/packet-socket-server.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/packet-socket.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/packetbb.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/pcap-file-wrapper.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/pcap-file.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/pcap-test.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/queue-fwd.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/queue-item.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/queue-limits.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/queue-size.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/queue.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/radiotap-header.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/sequence-number.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/simple-channel.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/simple-net-device.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/sll-header.h"
+    "/home/nasre/cnmp/ns-3.48/src/network/utils/timestamp-tag.h"
+    "/home/nasre/cnmp/ns-3.48/build/include/ns3/network-module.h"
     )
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/network/install_local_manifest.txt"
+  file(WRITE "/home/nasre/cnmp/ns-3.48/cmake-cache/src/network/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

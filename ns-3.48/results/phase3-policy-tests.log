@@ -1,0 +1,60 @@
+===== fixed-threshold-pull =====
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+NAKR Phase 3: policy validation (synthetic cost model)
+kvBytes=1024 thresholdBytes=4194304 linkRateMbps=100.000 linkDelayMs=10.000 recomputeMs=80.000 holderLoad=0.200 inFlightPulls=0 destinationLoad=0.100 observedThroughputMbps=90.000 telemetryAgeMs=0.000
+
+Nominal costs (ms): holder=45.000 pull=30.082 recompute=90.000
+Network-aware costs (ms): holder=45.000 pull=30.091 recompute=90.000
+fixed_threshold,PULL_KV,30.082 ms
+cost_aware,PULL_KV,30.082 ms
+network_aware,PULL_KV,30.091 ms
+
+===== fixed-threshold-recompute =====
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+NAKR Phase 3: policy validation (synthetic cost model)
+kvBytes=16777216 thresholdBytes=4194304 linkRateMbps=100.000 linkDelayMs=10.000 recomputeMs=80.000 holderLoad=0.200 inFlightPulls=0 destinationLoad=0.100 observedThroughputMbps=90.000 telemetryAgeMs=0.000
+
+Nominal costs (ms): holder=45.000 pull=1372.177 recompute=90.000
+Network-aware costs (ms): holder=45.000 pull=1521.308 recompute=90.000
+fixed_threshold,RECOMPUTE,90.000 ms
+cost_aware,EXECUTE_AT_HOLDER,45.000 ms
+network_aware,EXECUTE_AT_HOLDER,45.000 ms
+
+===== cost-aware-holder =====
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+NAKR Phase 3: policy validation (synthetic cost model)
+kvBytes=16777216 thresholdBytes=4194304 linkRateMbps=100.000 linkDelayMs=10.000 recomputeMs=80.000 holderLoad=0.100 inFlightPulls=0 destinationLoad=0.100 observedThroughputMbps=90.000 telemetryAgeMs=0.000
+
+Nominal costs (ms): holder=35.000 pull=1372.177 recompute=90.000
+Network-aware costs (ms): holder=35.000 pull=1521.308 recompute=90.000
+fixed_threshold,RECOMPUTE,90.000 ms
+cost_aware,EXECUTE_AT_HOLDER,35.000 ms
+network_aware,EXECUTE_AT_HOLDER,35.000 ms
+
+===== cost-aware-recompute =====
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+NAKR Phase 3: policy validation (synthetic cost model)
+kvBytes=16777216 thresholdBytes=4194304 linkRateMbps=10.000 linkDelayMs=10.000 recomputeMs=1.000 holderLoad=0.950 inFlightPulls=0 destinationLoad=0.000 observedThroughputMbps=8.000 telemetryAgeMs=0.000
+
+Nominal costs (ms): holder=120.000 pull=13446.773 recompute=6.000
+Network-aware costs (ms): holder=120.000 pull=16802.216 recompute=6.000
+fixed_threshold,RECOMPUTE,6.000 ms
+cost_aware,RECOMPUTE,6.000 ms
+network_aware,RECOMPUTE,6.000 ms
+
+===== network-aware-pull =====
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+NAKR Phase 3: policy validation (synthetic cost model)
+kvBytes=1024 thresholdBytes=4194304 linkRateMbps=100.000 linkDelayMs=10.000 recomputeMs=80.000 holderLoad=1.000 inFlightPulls=0 destinationLoad=0.000 observedThroughputMbps=90.000 telemetryAgeMs=0.000
+
+Nominal costs (ms): holder=125.000 pull=25.082 recompute=85.000
+Network-aware costs (ms): holder=125.000 pull=25.091 recompute=85.000
+fixed_threshold,PULL_KV,25.082 ms
+cost_aware,PULL_KV,25.082 ms
+network_aware,PULL_KV,25.091 ms
+

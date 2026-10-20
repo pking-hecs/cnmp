@@ -1,4 +1,4 @@
-# Install script for directory: /home/kevinsg/Desktop/cnmp/ns-3.48/src/core
+# Install script for directory: /home/nasre/cnmp/ns-3.48/src/core
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -44,25 +44,25 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/core/examples/cmake_install.cmake")
+  include("/home/nasre/cnmp/ns-3.48/cmake-cache/src/core/examples/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-core-default.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-core-default.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-core-default.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-core-default.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-core-default.so"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-core-default.so"
          RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib64" TYPE SHARED_LIBRARY FILES "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64/libns3.48-core-default.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-core-default.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-core-default.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/nasre/cnmp/ns-3.48/build/lib/libns3.48-core-default.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-core-default.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-core-default.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-core-default.so"
-         OLD_RPATH "/home/kevinsg/Desktop/cnmp/ns-3.48/build/lib64:::::::::::::::::::::::::::::::::::"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-core-default.so"
+         OLD_RPATH "/home/nasre/cnmp/ns-3.48/build/lib:::::::::::::::::::::::::::::::::::::::::::::::"
          NEW_RPATH "/usr/local/lib:\$ORIGIN/:\$ORIGIN/../lib:/usr/local/lib64:\$ORIGIN/:\$ORIGIN/../lib64")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib64/libns3.48-core-default.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libns3.48-core-default.so")
     endif()
   endif()
 endif()
@@ -72,117 +72,117 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ns3" TYPE FILE FILES
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/build/include/ns3/core-config.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/int64x64-128.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/helper/csv-reader.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/helper/event-garbage-collector.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/helper/random-variable-stream-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/abort.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/ascii-file.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/ascii-test.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/assert.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/attribute-accessor-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/attribute-construction-list.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/attribute-container.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/attribute-helper.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/attribute.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/boolean.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/breakpoint.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/build-profile.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/calendar-scheduler.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/callback.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/command-line.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/config.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/default-deleter.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/default-simulator-impl.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/demangle.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/deprecated.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/des-metrics.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/double.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/enum.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/event-id.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/event-impl.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/fatal-error.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/fatal-impl.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/fd-reader.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/environment-variable.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/global-value.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/hash-fnv.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/hash-function.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/hash-murmur3.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/hash.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/heap-scheduler.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/int64x64-double.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/int64x64.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/integer.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/length.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/list-scheduler.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/log-macros-disabled.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/log-macros-enabled.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/log.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/make-event.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/map-scheduler.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/math.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/names.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/node-printer.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/nstime.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/object-base.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/object-factory.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/object-map.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/object-ptr-container.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/object-vector.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/object.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/pair.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/pointer.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/priority-queue-scheduler.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/ptr.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/random-variable-stream.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/rng-seed-manager.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/rng-stream.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/scheduler.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/show-progress.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/shuffle.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/simple-ref-count.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/simulation-singleton.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/simulator-impl.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/simulator.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/singleton.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/string.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/synchronizer.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/system-path.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/system-wall-clock-ms.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/system-wall-clock-timestamp.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/test.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/time-printer.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/timer-impl.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/timer.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/trace-source-accessor.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/traced-callback.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/traced-value.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/trickle-timer.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/tuple.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/type-id.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/type-name.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/type-traits.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/uinteger.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/uniform-random-bit-generator.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/valgrind.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/vector.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/warnings.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/watchdog.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/realtime-simulator-impl.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/wall-clock-synchronizer.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/val-array.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/matrix-array.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/src/core/model/example-as-test.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/build/include/ns3/core-module.h"
-    "/home/kevinsg/Desktop/cnmp/ns-3.48/build/include/ns3/core-export.h"
+    "/home/nasre/cnmp/ns-3.48/build/include/ns3/core-config.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/int64x64-128.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/helper/csv-reader.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/helper/event-garbage-collector.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/helper/random-variable-stream-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/abort.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/ascii-file.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/ascii-test.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/assert.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/attribute-accessor-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/attribute-construction-list.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/attribute-container.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/attribute-helper.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/attribute.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/boolean.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/breakpoint.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/build-profile.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/calendar-scheduler.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/callback.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/command-line.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/config.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/default-deleter.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/default-simulator-impl.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/demangle.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/deprecated.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/des-metrics.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/double.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/enum.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/event-id.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/event-impl.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/fatal-error.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/fatal-impl.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/fd-reader.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/environment-variable.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/global-value.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/hash-fnv.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/hash-function.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/hash-murmur3.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/hash.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/heap-scheduler.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/int64x64-double.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/int64x64.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/integer.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/length.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/list-scheduler.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/log-macros-disabled.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/log-macros-enabled.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/log.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/make-event.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/map-scheduler.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/math.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/names.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/node-printer.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/nstime.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/object-base.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/object-factory.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/object-map.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/object-ptr-container.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/object-vector.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/object.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/pair.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/pointer.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/priority-queue-scheduler.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/ptr.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/random-variable-stream.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/rng-seed-manager.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/rng-stream.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/scheduler.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/show-progress.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/shuffle.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/simple-ref-count.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/simulation-singleton.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/simulator-impl.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/simulator.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/singleton.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/string.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/synchronizer.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/system-path.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/system-wall-clock-ms.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/system-wall-clock-timestamp.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/test.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/time-printer.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/timer-impl.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/timer.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/trace-source-accessor.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/traced-callback.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/traced-value.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/trickle-timer.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/tuple.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/type-id.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/type-name.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/type-traits.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/uinteger.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/uniform-random-bit-generator.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/valgrind.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/vector.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/warnings.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/watchdog.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/realtime-simulator-impl.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/wall-clock-synchronizer.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/val-array.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/matrix-array.h"
+    "/home/nasre/cnmp/ns-3.48/src/core/model/example-as-test.h"
+    "/home/nasre/cnmp/ns-3.48/build/include/ns3/core-module.h"
+    "/home/nasre/cnmp/ns-3.48/build/include/ns3/core-export.h"
     )
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/kevinsg/Desktop/cnmp/ns-3.48/cmake-cache/src/core/install_local_manifest.txt"
+  file(WRITE "/home/nasre/cnmp/ns-3.48/cmake-cache/src/core/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
