@@ -1,0 +1,136 @@
+[33mcc512ab[m add NS-3 TCP concurrency experiments and baseline results
+ .vscode/settings.json                                                       |     3 [32m+[m
+ ns-3.48/.lock-ns3_linux_build                                               |    12 [32m+[m[31m-[m
+ ns-3.48/cmake-cache/.ninja_deps                                             |   Bin [31m3912428[m -> [32m3969764[m bytes
+ ns-3.48/cmake-cache/.ninja_log                                              |  4027 [32m+++[m[31m----[m
+ ns-3.48/cmake-cache/CMakeCache.txt                                          |   256 [32m+[m[31m-[m
+ ns-3.48/cmake-cache/CMakeFiles/3.31.11/CMakeSystem.cmake                    |     8 [32m+[m[31m-[m
+ ns-3.48/cmake-cache/CMakeFiles/CMakeConfigureLog.yaml                       |   408 [32m+[m[31m-[m
+ .../CMakeFiles/Export/c4703df4e1fa5da4c275bce745242044/ns3Targets.cmake     |    74 [32m+[m[31m-[m
+ ns-3.48/cmake-cache/CMakeFiles/TargetDirectories.txt                        |  2050 [32m++[m[31m--[m
+ ns-3.48/cmake-cache/CMakeFiles/VerifyGlobs.cmake                            |    30 [32m+[m[31m-[m
+ ns-3.48/cmake-cache/CMakeFiles/rules.ninja                                  |   102 [32m+[m[31m-[m
+ ns-3.48/cmake-cache/build.ninja                                             | 21157 [32m++++++++++++++[m[31m--------------------[m
+ ns-3.48/cmake-cache/cmake_install.cmake                                     |    98 [32m+[m[31m-[m
+ ns-3.48/cmake-cache/compile_commands.json                                   |  9822 [32m++++++++[m[31m--------[m
+ .../three-gpp-v2v-channel-example.dir/three-gpp-v2v-channel-example.cc.o    |   Bin [31m1868256[m -> [32m1868504[m bytes
+ ns-3.48/cmake-cache/examples/channel-models/cmake_install.cmake             |     4 [32m+[m[31m-[m
+ ns-3.48/cmake-cache/examples/cmake_install.cmake                            |    36 [32m+[m[31m-[m
+ .../energy/CMakeFiles/energy-model-example.dir/energy-model-example.cc.o    |   Bin [31m2659752[m -> [32m2660048[m bytes
+ .../energy-model-with-harvesting-example.cc.o                               |   Bin [31m2697424[m -> [32m2697728[m bytes
+ ns-3.48/cmake-cache/examples/energy/cmake_install.cmake                     |     4 [32m+[m[31m-[m
+ .../error-model/CMakeFiles/simple-error-model.dir/simple-error-model.cc.o   |   Bin [31m1499552[m -> [32m1499776[m bytes
+ ns-3.48/cmake-cache/examples/error-model/cmake_install.cmake                |     4 [32m+[m[31m-[m
+ .../CMakeFiles/fragmentation-ipv6-PMTU.dir/fragmentation-ipv6-PMTU.cc.o     |   Bin [31m1445544[m -> [32m1445752[m bytes
+ .../fragmentation-ipv6-two-MTU.dir/fragmentation-ipv6-two-MTU.cc.o          |   Bin [31m1356024[m -> [32m1356216[m bytes
+ .../examples/ipv6/CMakeFiles/fragmentation-ipv6.dir/fragmentation-ipv6.cc.o |   Bin [31m1353216[m -> [32m1353408[m bytes
+ .../examples/ipv6/CMakeFiles/icmpv6-redirect.dir/icmpv6-redirect.cc.o       |   Bin [31m1376112[m -> [32m1376336[m bytes
+ .../examples/ipv6/CMakeFiles/loose-routing-ipv6.dir/loose-routing-ipv6.cc.o |   Bin [31m1426360[m -> [32m1426576[m bytes
+ .../examples/ipv6/CMakeFiles/ping6-example.dir/ping6-example.cc.o           |   Bin [31m1315720[m -> [32m1315920[m bytes
+ .../examples/ipv6/CMakeFiles/radvd-one-prefix.dir/radvd-one-prefix.cc.o     |   Bin [31m1460328[m -> [32m1460544[m bytes
+ .../examples/ipv6/CMakeFiles/radvd-two-prefix.dir/radvd-two-prefix.cc.o     |   Bin [31m1630560[m -> [32m1630776[m bytes
+ ns-3.48/cmake-cache/examples/ipv6/CMakeFiles/test-ipv6.dir/test-ipv6.cc.o   |   Bin [31m264112[m -> [32m264224[m bytes
+ ns-3.48/cmake-cache/examples/ipv6/CMakeFiles/wsn-ping6.dir/wsn-ping6.cc.o   |   Bin [31m1572528[m -> [32m1572792[m bytes
+ ns-3.48/cmake-cache/examples/ipv6/cmake_install.cmake                       |     4 [32m+[m[31m-[m
+ .../matrix-topology/CMakeFiles/matrix-topology.dir/matrix-topology.cc.o     |   Bin [31m2819232[m -> [32m2819528[m bytes
+ ns-3.48/cmake-cache/examples/matrix-topology/cmake_install.cmake            |     4 [32m+[m[31m-[m
+ .../examples/naming/CMakeFiles/object-names.dir/object-names.cc.o           |   Bin [31m1485440[m -> [32m1485672[m bytes
+ ns-3.48/cmake-cache/examples/naming/cmake_install.cmake                     |     4 [32m+[m[31m-[m
+ .../realtime/CMakeFiles/realtime-udp-echo.dir/realtime-udp-echo.cc.o        |   Bin [31m1164472[m -> [32m1164664[m bytes
+ ns-3.48/cmake-cache/examples/realtime/cmake_install.cmake                   |     4 [32m+[m[31m-[m
+ .../CMakeFiles/dynamic-global-routing.dir/dynamic-global-routing.cc.o       |   Bin [31m1333648[m -> [32m1333864[m bytes
+ .../CMakeFiles/global-injection-slash32.dir/global-injection-slash32.cc.o   |   Bin [31m1263440[m -> [32m1263656[m bytes
+ .../global-routing-multi-switch-plus-router.cc.o                            |   Bin [31m2017040[m -> [32m2017256[m bytes
+ .../CMakeFiles/global-routing-slash32.dir/global-routing-slash32.cc.o       |   Bin [31m1229672[m -> [32m1229888[m bytes
+ .../routing/CMakeFiles/manet-routing-compare.dir/manet-routing-compare.cc.o |   Bin [31m2547544[m -> [32m2547984[m bytes
+ .../routing/CMakeFiles/mixed-global-routing.dir/mixed-global-routing.cc.o   |   Bin [31m1173848[m -> [32m1174056[m bytes
+ .../routing/CMakeFiles/rip-simple-network.dir/rip-simple-network.cc.o       |   Bin [31m1910096[m -> [32m1910328[m bytes
+ .../routing/CMakeFiles/ripng-simple-network.dir/ripng-simple-network.cc.o   |   Bin [31m1912656[m -> [32m1912888[m bytes
+ .../CMakeFiles/simple-alternate-routing.dir/simple-alternate-routing.cc.o   |   Bin [31m1333776[m -> [32m1333968[m bytes
+ .../routing/CMakeFiles/simple-global-routing.dir/simple-global-routing.cc.o |   Bin [31m1347536[m -> [32m1347744[m bytes
+ .../CMakeFiles/simple-multicast-flooding.dir/simple-multicast-flooding.cc.o |   Bin [31m798040[m -> [32m798248[m bytes
+ .../routing/CMakeFiles/simple-routing-ping6.dir/simple-routing-ping6.cc.o   |   Bin [31m1201576[m -> [32m1201792[m bytes
+ .../CMakeFiles/static-routing-slash32.dir/static-routing-slash32.cc.o       |   Bin [31m1247048[m -> [32m1247264[m bytes
+ ns-3.48/cmake-cache/examples/routing/cmake_install.cmake                    |     4 [32m+[m[31m-[m
+ .../socket-bound-static-routing.dir/socket-bound-static-routing.cc.o        |   Bin [31m1583328[m -> [32m1583544[m bytes
+ .../socket-bound-tcp-static-routing.cc.o                                    |   Bin [31m1597840[m -> [32m1598048[m bytes
+ .../socket/CMakeFiles/socket-options-ipv4.dir/socket-options-ipv4.cc.o      |   Bin [31m1808688[m -> [32m1808896[m bytes
+ .../socket/CMakeFiles/socket-options-ipv6.dir/socket-options-ipv6.cc.o      |   Bin [31m1880632[m -> [32m1880840[m bytes
+ ns-3.48/cmake-cache/examples/socket/cmake_install.cmake                     |     4 [32m+[m[31m-[m
+ .../examples/stats/CMakeFiles/wifi-example-sim.dir/wifi-example-apps.cc.o   |   Bin [31m2115352[m -> [32m2115576[m bytes
+ .../examples/stats/CMakeFiles/wifi-example-sim.dir/wifi-example-sim.cc.o    |   Bin [31m3004632[m -> [32m3005008[m bytes
+ ns-3.48/cmake-cache/examples/stats/cmake_install.cmake                      |     4 [32m+[m[31m-[m
+ .../examples/tcp/CMakeFiles/dctcp-example.dir/dctcp-example.cc.o            |   Bin [31m2745104[m -> [32m2745360[m bytes
+ .../cmake-cache/examples/tcp/CMakeFiles/fack-example.dir/fack-example.cc.o  |   Bin [31m2971544[m -> [32m2971816[m bytes
+ ns-3.48/cmake-cache/examples/tcp/CMakeFiles/star.dir/star.cc.o              |   Bin [31m1621160[m -> [32m1621400[m bytes
+ .../examples/tcp/CMakeFiles/tcp-bbr-example.dir/tcp-bbr-example.cc.o        |   Bin [31m2618624[m -> [32m2618896[m bytes
+ .../examples/tcp/CMakeFiles/tcp-bulk-send.dir/tcp-bulk-send.cc.o            |   Bin [31m1390040[m -> [32m1390264[m bytes
+ .../examples/tcp/CMakeFiles/tcp-ecn-example.dir/tcp-ecn-example.cc.o        |   Bin [31m3030624[m -> [32m3030920[m bytes
+ .../examples/tcp/CMakeFiles/tcp-large-transfer.dir/tcp-large-transfer.cc.o  |   Bin [31m1630888[m -> [32m1631088[m bytes
+ .../examples/tcp/CMakeFiles/tcp-linux-reno.dir/tcp-linux-reno.cc.o          |   Bin [31m2847480[m -> [32m2847728[m bytes
+ ns-3.48/cmake-cache/examples/tcp/CMakeFiles/tcp-pacing.dir/tcp-pacing.cc.o  |   Bin [31m3126368[m -> [32m3126680[m bytes
+ .../CMakeFiles/tcp-pcap-nanosec-example.dir/tcp-pcap-nanosec-example.cc.o   |   Bin [31m1388392[m -> [32m1388608[m bytes
+ .../examples/tcp/CMakeFiles/tcp-star-server.dir/tcp-star-server.cc.o        |   Bin [31m1475240[m -> [32m1475448[m bytes
+ .../examples/tcp/CMakeFiles/tcp-validation.dir/tcp-validation.cc.o          |   Bin [31m4942568[m -> [32m4942872[m bytes
+ .../tcp/CMakeFiles/tcp-variants-comparison.dir/tcp-variants-comparison.cc.o |   Bin [31m3406880[m -> [32m3407136[m bytes
+ ns-3.48/cmake-cache/examples/tcp/cmake_install.cmake                        |     4 [32m+[m[31m-[m
+ .../traffic-control/CMakeFiles/cobalt-vs-codel.dir/cobalt-vs-codel.cc.o     |   Bin [31m2141144[m -> [32m2141360[m bytes
+ .../CMakeFiles/queue-discs-benchmark.dir/queue-discs-benchmark.cc.o         |   Bin [31m2976520[m -> [32m2976848[m bytes
+ .../CMakeFiles/red-vs-fengadaptive.dir/red-vs-fengadaptive.cc.o             |   Bin [31m1988856[m -> [32m1989104[m bytes
+ .../examples/traffic-control/CMakeFiles/red-vs-nlred.dir/red-vs-nlred.cc.o  |   Bin [31m1988792[m -> [32m1989032[m bytes
+ .../examples/traffic-control/CMakeFiles/tbf-example.dir/tbf-example.cc.o    |   Bin [31m1941032[m -> [32m1941264[m bytes
+ .../CMakeFiles/traffic-control-example.dir/traffic-control-example.cc.o     |   Bin [31m2438296[m -> [32m2438592[m bytes
+ ns-3.48/cmake-cache/examples/traffic-control/cmake_install.cmake            |     4 [32m+[m[31m-[m
+ ns-3.48/cmake-cache/examples/tutorial/CMakeFiles/fifth.dir/fifth.cc.o       |   Bin [31m1632864[m -> [32m1633072[m bytes
+ .../cmake-cache/examples/tutorial/CMakeFiles/fifth.dir/tutorial-app.cc.o    |   Bin [31m891784[m -> [32m891920[m bytes
+ ns-3.48/cmake-cache/examples/tutorial/CMakeFiles/first.dir/first.cc.o       |   Bin [31m1070168[m -> [32m1070368[m bytes
+ ns-3.48/cmake-cache/examples/tutorial/CMakeFiles/fourth.dir/fourth.cc.o     |   Bin [31m1158512[m -> [32m1158632[m bytes
+ .../examples/tutorial/CMakeFiles/hello-simulator.dir/hello-simulator.cc.o   |   Bin [31m173696[m -> [32m173768[m bytes
+ ns-3.48/cmake-cache/examples/tutorial/CMakeFiles/second.dir/second.cc.o     |   Bin [31m1365096[m -> [32m1365304[m bytes
+ ns-3.48/cmake-cache/examples/tutorial/CMakeFiles/seventh.dir/seventh.cc.o   |   Bin [31m2277040[m -> [32m2277288[m bytes
+ .../cmake-cache/examples/tutorial/CMakeFiles/seventh.dir/tutorial-app.cc.o  |   Bin [31m891784[m -> [32m891920[m bytes
+ ns-3.48/cmake-cache/examples/tutorial/CMakeFiles/sixth.dir/sixth.cc.o       |   Bin [31m1994608[m -> [32m1994832[m bytes
+ .../cmake-cache/examples/tutorial/CMakeFiles/sixth.dir/tutorial-app.cc.o    |   Bin [31m891784[m -> [32m891920[m bytes
+ ns-3.48/cmake-cache/examples/tutorial/CMakeFiles/third.dir/third.cc.o       |   Bin [31m1779000[m -> [32m1779280[m bytes
+ ns-3.48/cmake-cache/examples/tutorial/cmake_install.cmake                   |     4 [32m+[m[31m-[m
+ .../CMakeFiles/udp-client-server.dir/udp-client-server.cc.o                 |   Bin [31m1368384[m -> [32m1368584[m bytes
+ .../CMakeFiles/udp-trace-client-server.dir/udp-trace-client-server.cc.o     |   Bin [31m1371696[m -> [32m1371888[m bytes
+ ns-3.48/cmake-cache/examples/udp-client-server/cmake_install.cmake          |     4 [32m+[m[31m-[m
+ ns-3.48/cmake-cache/examples/udp/CMakeFiles/udp-echo.dir/udp-echo.cc.o      |   Bin [31m1364256[m -> [32m1364448[m bytes
+ ns-3.48/cmake-cache/examples/udp/cmake_install.cmake                        |     4 [32m+[m[31m-[m
+ .../wireless/CMakeFiles/mixed-wired-wireless.dir/mixed-wired-wireless.cc.o  |   Bin [31m3318520[m -> [32m3318896[m bytes
+ .../examples/wireless/CMakeFiles/wifi-80211e-txop.dir/wifi-80211e-txop.cc.o |   Bin [31m2569880[m -> [32m2570152[m bytes
+ .../examples/wireless/CMakeFiles/wifi-80211n-mimo.dir/wifi-80211n-mimo.cc.o |   Bin [31m1930960[m -> [32m1931264[m bytes
+ .../cmake-cache/examples/wireless/CMakeFiles/wifi-adhoc.dir/wifi-adhoc.cc.o |   Bin [31m2095152[m -> [32m2095416[m bytes
+ .../examples/wireless/CMakeFiles/wifi-aggregation.dir/wifi-aggregation.cc.o |   Bin [31m2111784[m -> [32m2112048[m bytes
+ ns-3.48/cmake-cache/examples/wireless/CMakeFiles/wifi-ap.dir/wifi-ap.cc.o   |   Bin [31m2867656[m -> [32m2867944[m bytes
+ .../wifi-backward-compatibility.dir/wifi-backward-compatibility.cc.o        |   Bin [31m2580544[m -> [32m2580816[m bytes
+ .../examples/wireless/CMakeFiles/wifi-blockack.dir/wifi-blockack.cc.o       |   Bin [31m1202872[m -> [32m1203120[m bytes
+ .../CMakeFiles/wifi-clear-channel-cmu.dir/wifi-clear-channel-cmu.cc.o       |   Bin [31m2015984[m -> [32m2016248[m bytes
+ .../wireless/CMakeFiles/wifi-dsss-validation.dir/wifi-dsss-validation.cc.o  |   Bin [31m1005464[m -> [32m1005640[m bytes
+ .../examples/wireless/CMakeFiles/wifi-eht-network.dir/wifi-eht-network.cc.o |   Bin [31m3590304[m -> [32m3590648[m bytes
+ .../wifi-error-models-comparison.dir/wifi-error-models-comparison.cc.o      |   Bin [31m1273168[m -> [32m1273344[m bytes
+ .../examples/wireless/CMakeFiles/wifi-he-network.dir/wifi-he-network.cc.o   |   Bin [31m3296904[m -> [32m3297232[m bytes
+ .../wireless/CMakeFiles/wifi-hidden-terminal.dir/wifi-hidden-terminal.cc.o  |   Bin [31m1774568[m -> [32m1774856[m bytes
+ .../examples/wireless/CMakeFiles/wifi-ht-network.dir/wifi-ht-network.cc.o   |   Bin [31m3368992[m -> [32m3369280[m bytes
+ .../wireless/CMakeFiles/wifi-mixed-network.dir/wifi-mixed-network.cc.o      |   Bin [31m2044296[m -> [32m2044576[m bytes
+ .../examples/wireless/CMakeFiles/wifi-multi-tos.dir/wifi-multi-tos.cc.o     |   Bin [31m2062568[m -> [32m2062832[m bytes
+ .../examples/wireless/CMakeFiles/wifi-multicast.dir/wifi-multicast.cc.o     |   Bin [31m4446968[m -> [32m4447296[m bytes
+ .../examples/wireless/CMakeFiles/wifi-multirate.dir/wifi-multirate.cc.o     |   Bin [31m2823416[m -> [32m2823736[m bytes
+ .../CMakeFiles/wifi-ofdm-eht-validation.dir/wifi-ofdm-eht-validation.cc.o   |   Bin [31m1030976[m -> [32m1031152[m bytes
+ .../CMakeFiles/wifi-ofdm-he-validation.dir/wifi-ofdm-he-validation.cc.o     |   Bin [31m1019504[m -> [32m1019672[m bytes
+ .../CMakeFiles/wifi-ofdm-ht-validation.dir/wifi-ofdm-ht-validation.cc.o     |   Bin [31m1019664[m -> [32m1019832[m bytes
+ .../wireless/CMakeFiles/wifi-ofdm-validation.dir/wifi-ofdm-validation.cc.o  |   Bin [31m1019296[m -> [32m1019472[m bytes
+ .../CMakeFiles/wifi-ofdm-vht-validation.dir/wifi-ofdm-vht-validation.cc.o   |   Bin [31m1019320[m -> [32m1019488[m bytes
+ .../wifi-power-adaptation-distance.dir/wifi-power-adaptation-distance.cc.o  |   Bin [31m4447584[m -> [32m4447888[m bytes
+ .../wifi-power-adaptation-interference.cc.o                                 |   Bin [31m5039480[m -> [32m5039800[m bytes
+ .../examples/wireless/CMakeFiles/wifi-ps-mode.dir/wifi-ps-mode.cc.o         |   Bin [31m2945528[m -> [32m2945856[m bytes
+ .../wifi-rate-adaptation-distance.dir/wifi-rate-adaptation-distance.cc.o    |   Bin [31m2812376[m -> [32m2812656[m bytes
+ .../CMakeFiles/wifi-simple-adhoc-grid.dir/wifi-simple-adhoc-grid.cc.o       |   Bin [31m2492016[m -> [32m2492280[m bytes
+ .../wireless/CMakeFiles/wifi-simple-adhoc.dir/wifi-simple-adhoc.cc.o        |   Bin [31m2311992[m -> [32m2312248[m bytes
+ .../wifi-simple-ht-hidden-stations.dir/wifi-simple-ht-hidden-stations.cc.o  |   Bin [31m1929608[m -> [32m1929864[m bytes
+ .../wireless/CMakeFiles/wifi-simple-infra.dir/wifi-simple-infra.cc.o        |   Bin [31m2330808[m -> [32m2331064[m bytes
+ .../CMakeFiles/wifi-simple-interference.dir/wifi-simple-interference.cc.o   |   Bin [31m2263856[m -> [32m2264104[m bytes
+ .../cmake-cache/examples/wireless/CMakeFiles/wifi-sleep.dir/wifi-sleep.cc.o |   Bin [31m2612160[m -> [32m2612440[m bytes
+ .../wireless/CMakeFiles/wifi-spatial-reuse.dir/wifi-spatial-reuse.cc.o      |   Bin [31m2951776[m -> [32m2952032[m bytes
+ .../CMakeFiles/wifi-spectrum-pe

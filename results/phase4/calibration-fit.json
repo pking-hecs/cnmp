@@ -1,0 +1,15 @@
+{
+  "model": "T_ms = tcpStartupRtts*RTT_ms + tcpInvEfficiency*(n*bytes*8/(rate_mbps*1000))",
+  "tcpStartupRtts": 6.8719,
+  "tcpInvEfficiency": 1.0078,
+  "mape_train_pct": 5.61,
+  "mape_heldout_pct": 5.74,
+  "mape_by_size_mib_pct": {
+    "4": 8.97,
+    "32": 4.48,
+    "256": 3.51
+  },
+  "n_train": 36,
+  "n_heldout": 18,
+  "transport": "8 MiB TCP buffers, MTU 9000 / MSS 8948, no queue disc, 512-packet device queue"
+}
