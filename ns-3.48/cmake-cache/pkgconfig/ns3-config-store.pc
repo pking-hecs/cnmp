@@ -9,5 +9,5 @@ Version: 3.48
 Requires:  ns3-core
 Requires.private: 
 Cflags: -I"${includedir}"  -I/usr/include -I/usr/include/libxml2
-Libs: -L"${libdir}" -lns3.48-config-store-default  -lns3.48-core-default /usr/lib/x86_64-linux-gnu/libxml2.so -lstdc++exp
+Libs: -L"${libdir}" -lns3.48-config-store-optimized  -lns3.48-core-optimized /usr/lib/x86_64-linux-gnu/libxml2.so -lstdc++exp
 Libs.private: -L"${libdir}" 

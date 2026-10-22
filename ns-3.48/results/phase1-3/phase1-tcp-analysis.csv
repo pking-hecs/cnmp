@@ -1,0 +1,9 @@
+link_rate_mbps,senders,total_data_mib,aggregate_throughput_mbps,link_utilization_pct,per_sender_throughput_mbps,completion_time_s,ideal_time_s_if_link_full,slowdown_vs_single_transfer,link_state,all_transfers_complete,inference
+10,1,10.0,9.02,90.2,9.02,9.3,8.39,1.0,SATURATED,true,"Link is full (90%). Each sender gets only 9.0 Mbps, so 1 transfers take 1.0x as long as one."
+10,2,20.0,9.06,90.6,4.53,18.52,16.78,1.99,SATURATED,true,"Link is full (91%). Each sender gets only 4.5 Mbps, so 2 transfers take 2.0x as long as one."
+10,4,40.0,9.07,90.7,2.27,36.98,33.55,3.98,SATURATED,true,"Link is full (91%). Each sender gets only 2.3 Mbps, so 4 transfers take 4.0x as long as one."
+10,8,80.0,9.07,90.7,1.13,73.97,67.11,7.95,SATURATED,true,"Link is full (91%). Each sender gets only 1.1 Mbps, so 8 transfers take 8.0x as long as one."
+100,1,10.0,35.91,35.9,35.91,2.34,0.84,1.0,UNDERUSED,true,"Link only 36% used. A single flow cannot fill it, so 1 transfers take 1.00x the single-transfer time while moving 1x the data."
+100,2,20.0,70.99,71.0,35.5,2.36,1.68,1.01,UNDERUSED,true,"Link only 71% used. A single flow cannot fill it, so 2 transfers take 1.01x the single-transfer time while moving 2x the data."
+100,4,40.0,88.51,88.5,22.13,3.79,3.36,1.62,SATURATED,true,"Link is full (89%). Each sender gets only 22.1 Mbps, so 4 transfers take 1.6x as long as one."
+100,8,80.0,89.63,89.6,11.2,7.49,6.71,3.21,SATURATED,true,"Link is full (90%). Each sender gets only 11.2 Mbps, so 8 transfers take 3.2x as long as one."

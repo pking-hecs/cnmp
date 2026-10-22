@@ -9,5 +9,5 @@ Version: 3.48
 Requires:  ns3-internet
 Requires.private: 
 Cflags: -I"${includedir}"  -I/usr/include -I/usr/include/libxml2
-Libs: -L"${libdir}" -lns3.48-flow-monitor-default  -lns3.48-internet-default -lstdc++exp
+Libs: -L"${libdir}" -lns3.48-flow-monitor-optimized  -lns3.48-internet-optimized -lstdc++exp
 Libs.private: -L"${libdir}" 

@@ -9,5 +9,5 @@ Version: 3.48
 Requires:  ns3-internet ns3-point-to-point ns3-mobility
 Requires.private: 
 Cflags: -I"${includedir}"  -I/usr/include -I/usr/include/libxml2
-Libs: -L"${libdir}" -lns3.48-point-to-point-layout-default  -lns3.48-internet-default -lns3.48-point-to-point-default -lns3.48-mobility-default -lstdc++exp
+Libs: -L"${libdir}" -lns3.48-point-to-point-layout-optimized  -lns3.48-internet-optimized -lns3.48-point-to-point-optimized -lns3.48-mobility-optimized -lstdc++exp
 Libs.private: -L"${libdir}" 

@@ -9,5 +9,5 @@ Version: 3.48
 Requires:  ns3-mesh
 Requires.private: 
 Cflags: -I"${includedir}"  -I/usr/include -I/usr/include/libxml2
-Libs: -L"${libdir}" -lns3.48-dsr-default  -lns3.48-mesh-default -lstdc++exp
+Libs: -L"${libdir}" -lns3.48-dsr-optimized  -lns3.48-mesh-optimized -lstdc++exp
 Libs.private: -L"${libdir}" 

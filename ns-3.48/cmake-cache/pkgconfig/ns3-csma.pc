@@ -9,5 +9,5 @@ Version: 3.48
 Requires:  ns3-network
 Requires.private: 
 Cflags: -I"${includedir}"  -I/usr/include -I/usr/include/libxml2
-Libs: -L"${libdir}" -lns3.48-csma-default  -lns3.48-network-default -lstdc++exp
+Libs: -L"${libdir}" -lns3.48-csma-optimized  -lns3.48-network-optimized -lstdc++exp
 Libs.private: -L"${libdir}" 

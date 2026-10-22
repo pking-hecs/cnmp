@@ -1,0 +1,5 @@
+topic,question,answer,evidence
+Break-even,How much bandwidth makes pulling worthwhile?,For 4096-token prefixes with an idle target and 1 s holder backlog: 13.07 Gbps,see phase4-break-even.csv
+Break-even,Closed form for the break-even bandwidth,Pull beats recompute when bandwidth > KV bytes/token x prefill tokens/s x 8 x (1/efficiency) = 12.7 Gbps (independent of prefix length),"uses defaults in nakr-cost-model.h: 128 KiB/token, 12,000 tokens/s; matches the CSV (13-15 Gbps once the holder is busy)"
+Telemetry,Does live telemetry ever change the decision (Phase 3 gap)?,Yes: in 9 of 30 grid cells where the static model chooses PULL.,"e.g. 25000.000 Mbps path, 90% busy, 0 pulls in flight: static pull 224 ms vs telemetry 1782 ms -> PULL becomes RECOMPUTE"
+Model,Held-out accuracy of the transfer-time model,5.74% mean error,"fitted startup = 6.8719 RTTs, 1/efficiency = 1.0078"

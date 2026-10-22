@@ -1,0 +1,11 @@
+phase,question,answer,evidence
+1,Does a shared link get saturated?,"10 Mbps: yes, always. 100 Mbps: only with 4+ senders.",10 Mbps utilization 90-91%; 100 Mbps goes 36% -> 90% for 1 -> 8 senders
+1,What does concurrency cost a transfer?,"On a saturated link, N pulls take about N times as long.",10 Mbps: 8 senders finish in 73.97s vs 9.3s alone (7.95x)
+1,Why does one flow underuse the 100 Mbps link?,Resolved in Phase 4: ns-3's default 128 KiB TCP buffer caps a flow at about 48 Mbps on a 22 ms RTT path.,1 sender reaches 35.91 Mbps; with a 512 KiB+ buffer it reaches ~85 Mbps (results/phase4/anomaly-factorial.csv)
+2,Do telemetry penalties raise pull cost?,"Yes, in every scenario.","Pull estimate rises by 1.08x, 6.54x, 1.38x, 1.25x (scenario order)"
+2,Did telemetry change any decision?,No (0 of 4 scenarios).,"The nominal model already rejects pull everywhere, and telemetry only makes pull costlier"
+2,Does the fixed-size threshold choose well?,"No, it picks the wrong option in 3 of 4 scenarios.",small-kv-low-contention: +88 ms; busy-holder: +184 ms; low-bandwidth: +4193 ms
+2,Caveat on the saved log,ns-3.48/results/phase2-decisions.log is stale; it used an older holder-cost formula.,Regenerated here with the current nakr-routing.cc
+3,Does cost-aware beat the fixed-size threshold?,"Yes, in 2 of 5 cases.",fixed-threshold-recompute: fixed pays 45 ms extra; cost-aware-holder: fixed pays 55 ms extra
+3,Does network-aware beat cost-aware?,Not shown yet (0 of 5 cases differ).,"Telemetry only raises pull cost, so a test must have the nominal model favour pull while congestion makes it a bad choice"
+all,Caveat,"Phase 2/3 numbers are synthetic model estimates, not measurements.",Cost coefficients are placeholders (see README)

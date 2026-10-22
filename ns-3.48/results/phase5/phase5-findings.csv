@@ -1,0 +1,6 @@
+topic,question,answer,evidence
+Ablation,What does the network-aware PULL option add beyond queue-aware routing (no pulls)?,"NAKR vs queue-aware-no-pulls on p95 TTFT: better in 0, tie in 3, worse in 5 of 8.","Most of NAKR's gain over cache-aware routing is already obtained WITHOUT moving any KV over the network (queue/compute awareness alone). In this setup the pull option, even with live telemetry, does not add p95 benefit beyond that."
+Hypothesis,Does NAKR beat KV-cache-aware routing?,"p95 TTFT: better in 8, tie in 0, worse in 0 of 8 scenarios.","largest gain: S1-load-70rps (-79% p95, -72% p99)"
+Hypothesis,Does live telemetry beat the static network model?,NAKR beats cost_static on p95 TTFT in 6 of 8 scenarios.,mean pull-time error: static 61% vs telemetry 38%
+Cost model,Is the pull-time prediction accurate inside the cluster?,NAKR average signed error -28% (negative = predicted too fast).,later pulls compete with earlier ones; the router cannot know future arrivals when it decides
+Prediction,Does EWMA smoothing of telemetry help under bursty traffic?,p95 TTFT by alpha (1.0 = no smoothing): alpha0.2: 1271 ms; alpha0.5: 1399 ms; alpha1.0: 1442 ms,see phase5-ablation.png

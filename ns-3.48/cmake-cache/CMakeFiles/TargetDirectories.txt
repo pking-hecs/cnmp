@@ -995,9 +995,12 @@
 /home/nasre/cnmp/ns-3.48/cmake-cache/examples/wireless/CMakeFiles/install.dir
 /home/nasre/cnmp/ns-3.48/cmake-cache/examples/wireless/CMakeFiles/install/local.dir
 /home/nasre/cnmp/ns-3.48/cmake-cache/examples/wireless/CMakeFiles/install/strip.dir
+/home/nasre/cnmp/ns-3.48/cmake-cache/scratch/CMakeFiles/scratch_nakr-cluster.dir
+/home/nasre/cnmp/ns-3.48/cmake-cache/scratch/CMakeFiles/scratch_nakr-routing-v2.dir
 /home/nasre/cnmp/ns-3.48/cmake-cache/scratch/CMakeFiles/scratch_nakr-routing.dir
 /home/nasre/cnmp/ns-3.48/cmake-cache/scratch/CMakeFiles/scratch_nakr-smoke-single.dir
 /home/nasre/cnmp/ns-3.48/cmake-cache/scratch/CMakeFiles/scratch_nakr-smoke.dir
+/home/nasre/cnmp/ns-3.48/cmake-cache/scratch/CMakeFiles/scratch_nakr-tcp-calibration.dir
 /home/nasre/cnmp/ns-3.48/cmake-cache/scratch/CMakeFiles/scratch_scratch-simulator.dir
 /home/nasre/cnmp/ns-3.48/cmake-cache/scratch/CMakeFiles/scratch_subdir_scratch-subdir.dir
 /home/nasre/cnmp/ns-3.48/cmake-cache/scratch/CMakeFiles/edit_cache.dir

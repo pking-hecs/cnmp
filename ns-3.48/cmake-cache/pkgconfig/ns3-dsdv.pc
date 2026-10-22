@@ -9,5 +9,5 @@ Version: 3.48
 Requires:  ns3-mesh ns3-internet-apps
 Requires.private: 
 Cflags: -I"${includedir}"  -I/usr/include -I/usr/include/libxml2
-Libs: -L"${libdir}" -lns3.48-dsdv-default  -lns3.48-mesh-default -lns3.48-internet-apps-default -lstdc++exp
+Libs: -L"${libdir}" -lns3.48-dsdv-optimized  -lns3.48-mesh-optimized -lns3.48-internet-apps-optimized -lstdc++exp
 Libs.private: -L"${libdir}" 

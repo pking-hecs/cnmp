@@ -1,0 +1,21 @@
+scenario,policy,pulls,pull_pred_ms,pull_actual_ms,pull_mape_pct,pull_bias_pct,reading
+S1-load-100rps,cost_static,34.6,405.9,2666.7,67.8,-67.8,underestimates pull time (decides too optimistically)
+S1-load-100rps,nakr,18.4,414.2,950.5,42.8,-28.7,underestimates pull time (decides too optimistically)
+S1-load-40rps,cost_static,0.6,21.9,32.0,5.2,-5.2,within +/-25% on average
+S1-load-40rps,nakr,0.6,21.9,21.9,0.1,0.1,within +/-25% on average
+S1-load-70rps,cost_static,7.0,167.1,474.2,25.7,-25.6,underestimates pull time (decides too optimistically)
+S1-load-70rps,nakr,5.8,166.7,226.6,11.3,-1.5,within +/-25% on average
+S2-congestion-bg3000,cost_static,42.6,393.4,4185.3,81.8,-81.8,underestimates pull time (decides too optimistically)
+S2-congestion-bg3000,nakr,18.6,446.0,1303.3,49.8,-40.4,underestimates pull time (decides too optimistically)
+S2-congestion-bg6000,cost_static,47.6,387.0,7416.6,89.2,-89.2,underestimates pull time (decides too optimistically)
+S2-congestion-bg6000,nakr,15.0,523.2,1423.5,43.0,-39.7,underestimates pull time (decides too optimistically)
+S3-bandwidth-10000Mbps,cost_static,95.2,279.8,5442.5,87.1,-87.1,underestimates pull time (decides too optimistically)
+S3-bandwidth-10000Mbps,nakr,35.0,369.9,915.3,49.2,-23.6,within +/-25% on average
+S3-bandwidth-1000Mbps,cost_static,2.4,433.5,1464.9,26.2,-26.2,underestimates pull time (decides too optimistically)
+S3-bandwidth-1000Mbps,nakr,1.0,434.0,555.3,6.2,-6.1,within +/-25% on average
+S3-bandwidth-5000Mbps,cost_static,62.2,402.7,6339.9,85.3,-85.3,underestimates pull time (decides too optimistically)
+S3-bandwidth-5000Mbps,nakr,21.2,494.2,1292.6,47.7,-30.3,underestimates pull time (decides too optimistically)
+S4-bursty-alpha0.2,nakr,16.4,444.7,1431.9,52.6,-44.6,underestimates pull time (decides too optimistically)
+S4-bursty-alpha0.5,nakr,18.2,468.7,1454.8,58.8,-39.7,underestimates pull time (decides too optimistically)
+S4-bursty-alpha1.0,nakr,18.2,468.5,1607.6,57.4,-49.6,underestimates pull time (decides too optimistically)
+S4-bursty-ref,cost_static,46.2,383.3,4706.4,84.0,-84.0,underestimates pull time (decides too optimistically)

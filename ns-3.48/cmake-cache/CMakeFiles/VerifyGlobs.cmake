@@ -5,9 +5,13 @@
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/nasre/cnmp/ns-3.48/scratch/**")
 set(OLD_GLOB
   "/home/nasre/cnmp/ns-3.48/scratch/CMakeLists.txt"
+  "/home/nasre/cnmp/ns-3.48/scratch/nakr-cluster.cc"
+  "/home/nasre/cnmp/ns-3.48/scratch/nakr-cost-model.h"
+  "/home/nasre/cnmp/ns-3.48/scratch/nakr-routing-v2.cc"
   "/home/nasre/cnmp/ns-3.48/scratch/nakr-routing.cc"
   "/home/nasre/cnmp/ns-3.48/scratch/nakr-smoke-single.cc"
   "/home/nasre/cnmp/ns-3.48/scratch/nakr-smoke.cc"
+  "/home/nasre/cnmp/ns-3.48/scratch/nakr-tcp-calibration.cc"
   "/home/nasre/cnmp/ns-3.48/scratch/nested-subdir"
   "/home/nasre/cnmp/ns-3.48/scratch/scratch-simulator.cc"
   "/home/nasre/cnmp/ns-3.48/scratch/subdir"
@@ -36,9 +40,12 @@ endif()
 # single_source_file_scratches at scratch/CMakeLists.txt:67 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/nasre/cnmp/ns-3.48/scratch/[^.]*.cc")
 set(OLD_GLOB
+  "/home/nasre/cnmp/ns-3.48/scratch/nakr-cluster.cc"
+  "/home/nasre/cnmp/ns-3.48/scratch/nakr-routing-v2.cc"
   "/home/nasre/cnmp/ns-3.48/scratch/nakr-routing.cc"
   "/home/nasre/cnmp/ns-3.48/scratch/nakr-smoke-single.cc"
   "/home/nasre/cnmp/ns-3.48/scratch/nakr-smoke.cc"
+  "/home/nasre/cnmp/ns-3.48/scratch/nakr-tcp-calibration.cc"
   "/home/nasre/cnmp/ns-3.48/scratch/scratch-simulator.cc"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
