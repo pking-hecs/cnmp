@@ -4,7 +4,7 @@
 #   bash scripts/run-phase4-5.sh quick      # skip the long Phase 5 campaign, re-analyze existing results
 set -euo pipefail
 REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-NS3="$REPO/ns-3.48"
+NS3="$REPO"
 MODE="${1:-full}"
 
 echo "== Build ns-3 (new Phase 4/5 programs in scratch/) =="
